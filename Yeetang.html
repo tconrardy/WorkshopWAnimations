@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+            body {
+            margin: 0 auto;
+            font-family: Charter;
+            font-size: 18px;
+            color: #1c1c1c;
+            background: #eee;
+            background-image: linear-gradient(165deg, #b0c3e8 7.29%, #eeeeee 7.29%, #b0c3e8 100%);
+          }
+
+          .overview {
+            width: 45em;
+            padding-top: 2em;
+            padding-bottom:.5em;
+            margin: 0 auto;
+          }.overview h1 {
+            font-size: 250%;
+            font-family: 'Raleway', sans-serif;
+          }.overview h3 {
+            font-size: 150%
+          }
+
+          .regular {
+            width: 45em;
+            margin: 0 auto;
+            padding: 1em;
+            line-height: 1.7;
+          }
+
+          .img1 {
+            width: 40em;
+            margin: 0 auto;
+          } .img2 {
+            width: 70em;
+            margin: 0 auto;
+            padding: .8em;
+          }
+
+          a {
+            color: #c46210;
+          }
+
+          .row {display: flex;}
+
+          .column {
+            flex: 50%;
+            padding: 5px;
+          }
+
+          .bib {
+            width: 40em;
+            margin: 0 auto;
+            padding: 1em;
+            line-height: 1.7;
+            font-size: 16px;
+          }
+        </style>
+      </head>
+      <body>
+
+          <div class="overview">
+            <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+            <h1>COVID-19: Community of Maps, Data, and the People Behind Them</h1>
+            <h3>Yeetang Kwok</h3>
+          </div>
+
+          <div class="regular">
+            <p>At the beginning of spring break, our family travelled to Florida, unknowing of the drastic changes that would take place during our stay. As cases started rising in Massachusetts, Toronto, and nearby Miami, we were worried and confused about where to go. Data and maps have been a clear and concise way for our family and many others to scope out the severity of the crisis at the local and national levels. In fact, the narrative of coronavirus has been driven by the numbers, whether it be the number of positive cases, the number of deaths, etc. Turning onto the news channels, here are some of the figures that we are shown. </p>
+          </div>
+          <div class="img1">
+            <img src= "https://photos.smugmug.com/StudentLife/2019-2020/Opening-of-School/i-SRJjnCv/0/c8119269/X2/IMG_0911-X2.jpg" alt="blank" style="width:100%">
+          </div>
+          <div class="regular">
+          	<p> The first questions that I asked myself are: what are some of the key figures in this crisis, and what do they mean? For example, something that sounds as simple as the death rate can be very different across states, and even counties. Some hospitals count coronavirus deaths as those directly caused by the disease. Other hospitals include deaths caused by other underlying conditions but accelerated by coronavirus. Then, there is also the question of data visualization and modelling. How are we to interpret these models? Why are there stark disagreements within the epidemiologist community?. In addition to approaching this crisis from a “numbers” perspective, I will be documenting the community of scientists, epidemiologists, and statisticians who spent countless hours compiling and making sense of the data. </p>
+          </div>
+
+          <div>
+            <div class="regular">
+              <h2> I. &emsp; Tracking Data and Models </h2>
+              <h3> The COVID Tracking Project <br>
+              <i> By Robinson Meyer, Alexis Madrigal, and Jeff Hammerbacher </i></h3>
+
+            <u> <h4> Background </u> </h4>
+              <p> The COVID Tracking Project is a volunteer operation launched by The Atlantic in response to the initial lack of comprehensive federal datasets. At the onset of the outbreak, the CDC has only published the case numbers, which only gives an incomplete picture without hospitalization rates and positive rates. The project grew from a team of three to more than hundreds of volunteers from many different professions. </p>
+            <u> <h4>Features</u> </h4>
+              <p> <strong> Data Tracking: </strong> The Covid Tracking Project assembles data directly from state/district/territory public health authorities. They receive updates from website-scrapers but enter the data manually to ensure accuracy. The national dataset displays testing results and deaths while the state dataset displays test results, hospitalizations, ICU and ventilator usage, as well as recovered numbers when available. Below are two examples of the data they provide. </p>
+                <div class="img1">
+                National
+                <img src= "https://image.shutterstock.com/image-photo/wide-angle-panorama-autumn-forestmisty-260nw-1195159864.jpg" alt="blank" style="width:100%">
+             </div>
+                <div class="img1">
+                California
+                <img src= "https://image.shutterstock.com/image-photo/wide-angle-panorama-autumn-forestmisty-260nw-1195159864.jpg" alt="blank" style="width:100%">
+              </div>
+              <p> <strong> Justifications for Data: </strong> The Covid Tracking Project provides clear explanations for inclusions and omissions. For example, the reason for the exclusion of hospitalization numbers in national data is due to inconsistent collection methods and definitions in different states. For state numbers, there are notes elucidating testing situations. Example below for testing notes in Massachusetts. </p>
+              <blockquote>“Positives include results from the CDC. Total tested includes repeat testing on individuals. State lab numbers are as of 8 am, other lab numbers are as of 11:30 am. Commercial lab numbers are subject to change. For 4/20, Cumulative Hospitalized, Cumulative in ICU includes both confirmed and suspected cases.”</blockquote>
+              <p> <strong> Data Grade: </strong>Each state is given a grade for the comprehensiveness of their reported data. The score is determined on these four factors: <br>
+          <blockquote> +1 for reporting positives reliably<br>
+          +1 for reporting negatives sometimes<br>
+          +1 for reporting negatives reliably<br>
+            +1 for reporting all commercial tests</blockquote>
+              A score of 1 corresponds to D, 2 to C, 3 to B, and 4 to A. </p>
+              <p> <strong> COVID Racial Data Tracker: </strong> Partnering with Ibram Kendi and the Antiracist Research & Policy Center at American University, the team will launch a racial data tracker that delineates COVID-19 deaths by race. </p>
+            <u> <h4>Trends and Insights</u> </h4>
+              <div class="img1">
+                <strong> Tuesday Peaks</strong>
+                <img src= "https://pbs.twimg.com/media/EDyQeqAW4AIUv1H.jpg" alt="blank" style="width:100%">
+              </div>
+              <p> <a href="https://twitter.com/COVID19Tracking/status/1250184026389803009"> Here is the most recent US deaths graph</a> posted on COVID Tracking Project. We saw an increase of 849 deaths from the day before. One Twitter commentator noted that the deaths every Tuesday seemed to spike. Some say it is because hospitals are less manned on weekends. Some say it is because coroners and the overall certification process is delayed until the new week.</p>
+              <div class="img1">
+                <p> Update: 04-21: Deaths rose to a new single-day high this Tuesday, as with every Tuesday so far this month. </p>
+                <img src= "https://pbs.twimg.com/media/EDyQeqAW4AIUv1H.jpg" alt="blank" style="width:100%">
+              </div>
+            </div>
+
+            <div class="regular">
+              <h3> The Johns Hopkins Dashboard<br>
+                <i> By Lauren Gardner and Ensheng Dong </i></h3>
+              <h4> <u> Background</u> </h4>
+              <p> You’ve probably seen this dashboard at some point. The Dashboard was created by Lauren Gardner and Ensheng Dong at Johns Hopkins Center for Systems Science and Engineering.While their intended audience was for the academic world, their dataset has become one of the most authoritative and receives over 1 billion requests a day. What started as a team of 3 grew to nearly two dozen working around the clock. It has displayed a good overview of global and local progression of the outbreak.</p>
+              <h4> <u> Features </u> </h4>
+                <p> <strong> Data-tracking: </strong> Updated automatically using semi-automated living data stream strategy and historically reported higher values than WHO because. Data garnered from national agencies such as the Chinese CDC, Government of Canada, CDC etc. </p>
+                <p> <strong> Display: </strong> The main dashboard displays cases by region, deaths by region, and an interactive map and timeline. It shows cumulative national cases in every country except the United States (county-wide), Canada (province-wide), China (province-wide), and Australia (state-wide). The dashboard uses the Arcgis interactive mapping software. </p>
+                <div class="img1">
+                <img src= "https://pbs.twimg.com/media/EDyQeqAW4AIUv1H.jpg" alt="blank" style="width:100%">
+              </div>
+                <p> <strong> Source Bar: </strong> Lists main data sources from the WHO to social media handles. Includes a Lancet Infectious disease letter explaining data retrieval process. Clarifies key terminology such as death totals being both presumptive and confirmed deaths.</p>
+              <h4> <u> Trends and Insights </u> </h4>
+                <p> <strong> What is the mortality rate of coronavirus, and what does it mean? </strong> </p>
+                <p>The mortality rate differs vastly across different nations because of different methods of counting and situations. For example, in Germany and Spain, the death toll only accounts for hospital deaths. Whereas in Belgium, all presumed coronavirus deaths in hospitals, care homes, and other locations are counted, leading to a high mortality rate. </p>
+                <div class="img1">
+            <img src= "https://images.squarespace-cdn.com/content/v1/592effb559cc68ea27d80633/1555512509504-CMV41KEO4N9WGYISMX34/ke17ZwdGBToddI8pDm48kEwE4YGvcSI7Oatlel25hxV7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0mxU0godxi02JM9uVemPLqwnk0ZH5RTG5j-VQ9fsBfaI2JvpMuVBjTYT32Eputk1Ew/VanderwarkerIMG_4633.jpg" alt="blank" style="width:100%">
+            </div>
+                <p> Other factors for this difference in case-fatality ratio (deaths per 100 cases) include testing availability, hospital capacity, and demographics of a nation. We could see the mortality rate drop drastically as testing becomes more widespread among asymptomatic or mildly-symptomatic people. </p>
+            </div>
+
+            <div class = "regular">
+              <h3> The University of Washington Institute for Health Metrics and Evaluation (IHME) Model</h3>
+              <h4> <u> Background</u> </h4>
+                <p>The University of Washington IHME Model is one of the most frequently cited coronavirus models. It has played a large role in government action in the United States. Significant events such as the initial stay-at-home order and the “10000 deaths” estimate all came from the IMHE model. </p>
+                <div class="img1">
+                  <img src= "https://images.squarespace-cdn.com/content/v1/592effb559cc68ea27d80633/1555512509504-CMV41KEO4N9WGYISMX34/ke17ZwdGBToddI8pDm48kEwE4YGvcSI7Oatlel25hxV7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0mxU0godxi02JM9uVemPLqwnk0ZH5RTG5j-VQ9fsBfaI2JvpMuVBjTYT32Eputk1Ew/VanderwarkerIMG_4633.jpg" alt="blank" style="width:100%">
+            </div>
+            </div>
+
+            <div class = "regular">
+              <h3> A Collection of Graphs, Maps, and People who are documenting this crisis through visuals and numbers. </h3>
+              <div class="img1">
+              <strong> John Burn-Murdoch</strong>
+              <img src= "https://pbs.twimg.com/media/EWeU-lLXkAkcGsa?format=jpg&name=4096x4096" alt="blank" style="width:100%">
+              <br><br>
+            </div>
+              <div class="img1">
+              <strong> COVID Exit Strategy</strong>
+              <img src= "https://live.staticflickr.com/5562/30558598124_a1eb2ec4fd_b.jpg" alt="blank" style="width:100%">
+              <br><br>
+            </div>
+              <div class="img1">
+              <strong> Rt Covid-19</strong>
+              <img src= "https://live.staticflickr.com/5562/30558598124_a1eb2ec4fd_b.jpg" alt="blank" style="width:100%">
+            </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="regular">
+              <h2> II. &emsp; Related Graphs/Maps </h2>
+            </div>
+            <div class="img2">
+            <div class="row">
+              <div class="column">
+              <img src="https://images2.boardingschoolreview.com/photo/1122x864/0/5/phillips-academy-andover-Fa2ky8.jpg" alt="blank" style="width:100%">
+              </div>
+              <div class="column">
+              <img src="https://images2.boardingschoolreview.com/photo/1122x864/0/5/phillips-academy-andover-Fa2ky8.jpg" alt="blank" style="width:100%">
+              </div>
+              <div class="column">
+              <img src="https://images2.boardingschoolreview.com/photo/1122x864/0/5/phillips-academy-andover-Fa2ky8.jpg" alt="blank" style="width:100%">
+              </div>
+            </div>
+                <br> <hr size=4 noshade>
+          </div>
+          </div>
+
+          <div class="bib">
+            <h2> Sources </h2>
+            <p><a href="https://www.freethink.com/articles/what-is-the-coronavirus-death-rate">https://www.freethink.com/articles/what-is-the-coronavirus-death-rate</a></p>
+            <p><a href="https://public.tableau.com/profile/peter.james.walker#!/vizhome/Coronavirus-ChangeovertimeintheUSA/1_CoronaOverview"> https://public.tableau.com/profile/peter.james.walker#!/vizhome/Coronavirus-ChangeovertimeintheUSA/1_CoronaOverview</a></p>
+            <p><a href="https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html"> https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html</a></p>
+            <p><a href="https://twitter.com/AdamJKucharski">https://twitter.com/AdamJKucharski</a></p>
+            <p><a href="https://www.npr.org/2020/04/13/833337645/all-models-are-wrong-but-some-are-useful"> https://www.npr.org/2020/04/13/833337645/all-models-are-wrong-but-some-are-useful</a></p>
+            <p><a href="https://fivethirtyeight.com/features/politics-podcast-why-forecasting-covid-19-is-harder-than-forecasting-elections/">https://fivethirtyeight.com/features/politics-podcast-why-forecasting-covid-19-is-harder-than-forecasting-elections/</a></p>
+            <p><a href="https://labblog.uofmhealth.org/rounds/how-scientists-quantify-intensity-of-an-outbreak-like-covid-19">https://labblog.uofmhealth.org/rounds/how-scientists-quantify-intensity-of-an-outbreak-like-covid-19</a></p>
+            <p><a href="https://www.natureindex.com/news-blog/behind-johns-hopkins-university-coronavirus-dashboard">https://www.natureindex.com/news-blog/behind-johns-hopkins-university-coronavirus-dashboard</a></p>
+            <p><a href="https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(20)30120-1/fulltext">https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(20)30120-1/fulltext</a></p>
+            <br><br><br><br><br>
+          </div>
+        </body>
+      </html>

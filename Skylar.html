@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+          body {
+            margin: 0 auto;
+            font-family: Charter;
+            font-size: 18px;
+            color: #1c1c1c;
+            background: #eee;
+            background-image: linear-gradient(165deg, #fffee4 11.29%, #eeeeee 11.29%, #fffee4 100%);
+          }
+
+          .overview {
+            width: 45em;
+            padding-top: 2em;
+            padding-bottom:.5em;
+            margin: 0 auto;
+          }
+
+          .overview h1 {
+            font-size: 250%;
+            font-family: 'Raleway', sans-serif;
+          }.overview h3 {
+            font-size: 150%
+          }
+
+          .regular {
+            width: 45em;
+            margin: 0 auto;
+            padding: 1em;
+            line-height: 1.7;
+          }
+
+          a {color: #c46210;}
+
+          ul {
+            list-style-type: none; /* Remove bullets */
+            padding: 0; /* Remove padding */
+            width: 42em;
+            margin: 0 auto; /* Remove margins */
+            border-style:double;
+            border-color:#8e8878;
+          }
+
+          ul li {
+            border: 1px solid #ddd; /* Add a thin border to each list item */
+            margin-top: -1px; /* Prevent double borders */
+            background-color: #faf8f3; /* Add a grey background color */
+            padding: 12px; /* Add some padding */
+          }
+
+          /* Slideshow container */
+          .slideshow-container {
+            position: relative;
+            background: #faf8f3;
+            width: 50em;
+            margin: 0 auto;
+            border-style: double;
+            border-color: #8e8878;
+          }
+
+          /* Slides */
+          .mySlides {
+            display: none;
+            padding-top: 30px;
+            padding-bottom: 40px;
+            padding-left: 80px;
+            padding-right: 80px;
+            text-align: justify;
+          }
+
+
+          /* Next & previous buttons */
+          .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -30px;
+            padding: 16px;
+            color: #888;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+          }
+
+          /* Position the "next button" to the right */
+          .next {
+            position: absolute;
+            right: 0;
+            border-radius: 3px 0 0 3px;
+          }
+
+          /* On hover, add a black background color with a little bit see-through */
+          .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+            color: white;
+          }
+
+          /* The dot/bullet/indicator container */
+          .dot-container {
+            text-align: center;
+            padding: 20px;
+            background: #ddd;
+            width: 48.25em;
+            margin: 0 auto;
+          }
+
+          /* The dots/bullets/indicators */
+          .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+          }
+
+          /* Add a background color to the active dot/circle */
+          .active, .dot:hover {
+            background-color: #717171;
+          }
+
+          .avatar {
+            vertical-align: middle;
+            max-width: 180px;
+            height: 180px;
+            border-radius: 15%;
+            float: left;
+            margin-right: 5%;
+          }
+
+          .bib {
+            width: 40em;
+            margin: 0 auto;
+            padding: 1em;
+            line-height: 1.7;
+            font-size: 16px;
+          }
+        </style>
+      </head>
+      <body>
+
+
+
+          <div class="overview">
+            <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+            <h1>Journeys Through the COVID-19 Crisis</h1>
+            <h2>Skylar Xu</h2>
+          </div>
+
+          <div class="regular">
+            <h2>Introduction:</h2>
+            <p>This collection of oral histories showcases the journeys, virtual and physical, of nine Phillips Academy international students hailing from Hong Kong, Japan, South Korea, India, Singapore, Bahrain, Kenya, South Africa, Lithuania and Brazil. Most if not all international students were faced with the question of whether or not to return home, a decision complicated by border closures and travel bans. As everyone finds their way to a place to stay in the days leading up to a quasi-global quarantine, every one of them has a different story to tell, especially since each country is handling the situation differently.</p>
+            <p>In this collection, you will get to know some ways in which international students were affected by COVID-19, especially how travel restrictions made it difficult to return home. You will also hear their observations of the crisis under a comparative, global lens, and get a sense of the things they are most concerned about at this time of crisis.</p>
+            <p>For ease of interpretation, I have included a formal timeline of significant events mentioned by these international students, as well as a timeline of Andover’s post-spring break plans, which have been revised threefold.</p>
+          </div>
+
+          <div class="timeline">
+          <ul>
+            <li><strong>JAN 21</strong> &emsp; — &emsp;First US coronavirus case</li>
+            <li><strong>JAN 30</strong> &emsp; — &emsp;WHO declares global health emergency</li>
+            <li><strong>FEB 29</strong> &emsp; — &emsp;CDC releases travel restrictions on China, South Korea, Iran and Italy</li>
+            <li><strong>MAR 07</strong> &emsp; — &emsp;PA spring break starts</li>
+            <li><strong>MAR 10</strong> &emsp; — &emsp;PA spring break extended by a week</li>
+            <li><strong>MAR 17</strong> &emsp; — &emsp;Projected return pushed back; stated suggestion that students return home</li>
+            <li><strong>MAR 26</strong> &emsp; — &emsp;the US has the highest number of cases of any country</li>
+            <li><strong>APR 01</strong> &emsp; — &emsp;Spring term is completely online</li>
+            <li><strong>APR 02</strong> &emsp; — &emsp;COVID-19 cases reach 1 million worldwide</li>
+          </ul>
+            <br>
+          </div>
+
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+            <!-- Full-width slides/quotes -->
+            <div class="mySlides">
+              <div class="top">
+                <img src="https://pbs.twimg.com/media/EDyQeqAW4AIUv1H.jpg" alt="Avatar" class="avatar">
+              <h2 style="text-align:justify"> Ralph Lam ’22 </h2>
+            <p style="text-align:justify"><i> “The Andover Bubble that a lot of students like to talk about… that phenomenon really kicked in for me.”</i></p>
+                <audio controls>
+                  <source src="horse.ogg" type="audio/ogg">
+                 <source src="horse.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+                </audio>
+                <br><br>
+              </div>
+              <p>Citing the emergence of invisible borders during quarantine, Ralph expresses concern for the homeless community around the world, who are often composed of demographics susceptible to COVID-19 yet don’t have the means to protect themselves from the virus. He also recalls the experience of having a cold at the start of March and wearing a mask in the crowded school cafeteria.<br><br>
+              <i>Date: April 09, 2020 &emsp;
+          Method: Zoom &emsp;
+          Year of Birth: 2004 &emsp;
+                Region: Hong Kong</i> </p>
+            </div>
+            <div class="mySlides">
+              <div class="top">
+                <img src="https://pbs.twimg.com/media/EDyQeqAW4AIUv1H.jpg" alt="Avatar" class="avatar">
+              <h2 style="text-align:justify"> Laura Lee ’20 </h2>
+            <p style="text-align:justify"><i> “The moment the whole coronavirus incident turned into something that could have been a personal matter, I sort of started panicking...that’s when I realized coronavirus is a real threat.”</i></p>
+                <audio controls>
+                  <source src="horse.ogg" type="audio/ogg">
+                 <source src="horse.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+                </audio>
+                <br><br>
+              </div>
+              <p>Laura was very aware of herself coughing as an Asian while going to a grocery store, even though it was just a cold, even though no one really said anything or did anything. Laura originally planned to spend the second half of spring break with friends in San Francisco, but ended up flying home, wearing a neck scarf temporarily before getting a mask from a flight attendant. She recounts the moment she learned from her mother that someone in her workplace building had caught COVID-19.<br><br>
+              <i>Date: April 10, 2020 &emsp; Method: Zoom &emsp; Year of Birth: 2000 &emsp; Region: South Korea</i> </p>
+            </div>
+            <div class="mySlides">
+              <div class="top">
+                <img src="https://pbs.twimg.com/media/EDyQeqAW4AIUv1H.jpg" alt="Avatar" class="avatar">
+              <h2 style="text-align:justify"> Kotryna Andriuskeviciute ’20 </h2>
+            <p style="text-align:justify"><i> “There was a community feeling [in Lithuania] that usually isn’t there.”</i></p>
+                <audio controls>
+                  <source src="horse.ogg" type="audio/ogg">
+                 <source src="horse.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+                </audio>
+                <br><br>
+              </div>
+              <p>By the time Kotryna started planning to go home, Lithuania had closed its borders and most flights were suspended. Returning home wasn’t imperative for her, but now she doesn’t know when she would be able to return home. Kotryna is grateful to stay with a friend in Colorado, and she explains the unexpected community bonding that took place at home.<br><br>
+              <i>Date: April 10, 2020 &emsp; Method: Zoom &emsp; Year of Birth: 2001 &emsp; Region: Lithuania</i> </p>
+            </div>
+            <div class="mySlides">
+              <div class="top">
+                <img src="https://pbs.twimg.com/media/EDyQeqAW4AIUv1H.jpg" alt="Avatar" class="avatar">
+              <h2 style="text-align:justify"> Koki Kapoor ’21 </h2>
+            <p style="text-align:justify"><i> “On the flight from Dubai to Mumbai, I think there were maybe 30 people, and it was an A380.”</i></p>
+                <audio controls>
+                  <source src="horse.ogg" type="audio/ogg">
+                 <source src="horse.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+                </audio>
+                <br><br>
+              </div>
+              <p>Koki is among the many affected by March SAT cancellations, as well as canceled college visits and hotel stays for which there was no flexible refund. She feels lucky to have returned home safely, aboard somewhat empty flights, including a double-decked A380 that was not even half full. She also raises concern for the overall strain that COVID-19 is putting on India, as wealth inequality dictates susceptibility to the virus and resources are being depleted.<br><br>
+              <i>Date: April 10, 2020 &emsp; Method: Zoom &emsp; Year of Birth: 2003 &emsp; Region: India</i> </p>
+            </div>
+            <div class="mySlides">
+              <div class="top">
+                <img src="https://pbs.twimg.com/media/EDyQeqAW4AIUv1H.jpg" alt="Avatar" class="avatar">
+              <h2 style="text-align:justify"> Alia Abdulla ’20 </h2>
+            <p style="text-align:justify"><i> “One thing that really surprised me was how host families were willing to host more international students when they had nowhere to go and nowhere to stay.”</i></p>
+                <audio controls>
+                  <source src="horse.ogg" type="audio/ogg">
+                 <source src="horse.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+                </audio>
+                <br><br>
+              </div>
+              <p>Alia’s flight home to Bahrain always includes a layover in Dubai, but Dubai stopped accepting layover flights from Boston just two days before spring break started. She still got through Dubai to get home, with a 13-hour layover. Alia talks about a tracking GPS phone app, masks, self-isolation, and the COVID-19 situation in Bahrain.<br><br>
+              <i>Date: April 11, 2020 &emsp; Method: Facetime Audio &emsp; Year of Birth: 2000 &emsp; Region: Bahrain</i> </p>
+            </div>
+            <div class="mySlides">
+              <div class="top">
+                <img src="https://pbs.twimg.com/media/EDyQeqAW4AIUv1H.jpg" alt="Avatar" class="avatar">
+              <h2 style="text-align:justify"> Cheryl Tugade ’21 </h2>
+            <p style="text-align:justify"><i> “My dad said he could tell based on Andover’s reaction that the US wasn’t ready for the virus.”</i></p>
+                <audio controls>
+                  <source src="horse.ogg" type="audio/ogg">
+                 <source src="horse.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+                </audio>
+                <br><br>
+              </div>
+              <p>Cheryl debated the pros and cons of returning home before deciding that seeing her family and friends was worth the risk of having difficulty returning to the US. During her first few days back home, she visited friends as well as her middle school. Everything seemed like it would return to normal, like the scheduled return of her brother’s school. As the cases climbed, no one is visiting friends anymore, her middle school has closed, and it seemed her brother might not return to school in a while.<br><br>
+              <i>Date: April 10, 2020 &emsp; Method: Zoom &emsp; Year of Birth: 2003 &emsp; Region: Singapore</i> </p>
+            </div>
+            <div class="mySlides">
+              <div class="top">
+                <img src="https://pbs.twimg.com/media/EDyQeqAW4AIUv1H.jpg" alt="Avatar" class="avatar">
+              <h2 style="text-align:justify"> Riku Tanaka ’20 </h2>
+            <p style="text-align:justify"><i> “I have a lot of friends on the local swimming team...what are they gonna do with their time? Swimming was their life.”</i></p>
+                <audio controls>
+                  <source src="horse.ogg" type="audio/ogg">
+                 <source src="horse.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+                </audio>
+                <br><br>
+              </div>
+              <p>After making the decision to travel home, Riku Tanaka finds himself concerned about the mental health of people he knows: victims of domestic violence and athletes being deprived of their training. He also lends some insight into the delay of the 2020 Olympic Games in Tokyo, as well as a Japanese proverb that embodies the ability to think as a collective.<br><br>
+              <i>Date: April 12, 2020 &emsp; Method: Zoom &emsp; Year of Birth: 2002 &emsp; Region: Japan</i> </p>
+            </div>
+            <div class="mySlides">
+              <div class="top">
+                <img src="https://pbs.twimg.com/media/EDyQeqAW4AIUv1H.jpg" alt="Avatar" class="avatar">
+              <h2 style="text-align:justify"> Olwethu Ngubo ’21 </h2>
+            <p style="text-align:justify"><i> “People tend to think of the US as a model country...I am more impressed by my own country.”</i></p>
+                <audio controls>
+                  <source src="horse.ogg" type="audio/ogg">
+                 <source src="horse.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+                </audio>
+                <br><br>
+              </div>
+              <p>Because of South Africa’s border closure, Olwethu is staying with family friends in Texas for now. She sheds light on the othering and slighting of COVID-19 in its early days, and why empathy for another’s pain proves to be especially important. She also unpacks other countries’ expectations of the US, the country having the highest number of known cases since March 27th.<br><br>
+              <i>Date: April 12, 2020 &emsp; Method: FaceTime Audio &emsp; Year of Birth: 2003 &emsp; Region: South Africa</i> </p>
+            </div>
+            <div class="mySlides">
+              <div class="top">
+                <img src="https://pbs.twimg.com/media/EDyQeqAW4AIUv1H.jpg" alt="Avatar" class="avatar">
+              <h2 style="text-align:justify"> Bruna Cincura ’20 </h2>
+            <p style="text-align:justify"><i> “It has definitely gone our family on edge, because of the stress of not knowing if you’re contaminated.... I know people are saying, take the time during quarantine to stay with your family, to reconnect with your family and everything, but it’s just so hard to do that when in the back of your mind you have this huge worry of, is my mother gonna be okay?”</i></p>
+                <audio controls>
+                  <source src="horse.ogg" type="audio/ogg">
+                 <source src="horse.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+                </audio>
+                <br><br>
+              </div>
+              <p>As the daughter of an Emergency Room pediatrician, Bruna is constantly concerned for her mother’s health and wellbeing, especially as the ER sees more and more patients suspected to have COVID-19. She says the virus puts international human flow into focus, and calls for empathy in this difficult time. Bruna mentions how people protest whenever the president speaks on TV, and the fact that she has never watched the news more than she does today.<br><br>
+              <i>Date: April 14, 2020 &emsp; Method: FaceTime Audio &emsp; Year of Birth: 2002 &emsp; Region: Brazil</i> </p>
+            </div>
+              <div class="mySlides">
+              <div class="top">
+              <h2 style="text-align:justify"> Irura Nyiha ’20 </h2>
+            <p style="text-align:justify"><i> “The reality really hit me two weeks ago. This thing isn’t as detached as people make it up to be, it’s very real and it could really impact you if you’re not careful.”</i></p>
+                <audio controls>
+                  <source src="horse.ogg" type="audio/ogg">
+                 <source src="horse.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+                </audio>
+                <br><br>
+              </div>
+              <p>Irura was scheduled to go on a Learning in the World program trip during spring break, but home in Kenya, where the government imposed a curfew from 7pm to 2am, making it hard for some working families. Irura talks about how people are protecting themselves and living amid this unusual shift in lifestyle, and mentions a suspected indirect contact with someone who had the virus - thankfully, he and his family are cleared after two weeks of strict self-isolation.<br><br>
+              <i>Date: April 15, 2020 &emsp; Method: Zoom &emsp; Region: Kenya</i> </p>
+            </div>
+            <!-- Next/prev buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <!-- Dots/bullets/indicators -->
+          <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+          </div>
+
+          <div class="regular">
+            <h2>Words of Reflection</h2>
+            <p>So many countries have published travel restrictions that 1he New York Times has an updating global list. Newfound connections like cross-regional aid and global livestream concerts seem paradoxical in the face of such a dividing crisis.</p>
+            <p>I initially came to this project by reflecting on my own journey home, hearing about other international students who struggled to find a ticket back home or struggled to find a place to stay. The global scale of this pandemic brings our interconnected reality to the spotlight. and I think there is a lot to glean from the lived experience of this handful of international students. </p>
+            <p>While this is far from the whole picture. I hope to highlight both the vulnerability and the potential within the international student community. The vulnerability comes into play when they find themselves stuck between their home country and the one they arc studying in. Their potential, however, lies in this unique position. having experience in cross-cultural communication and critical comparisons. </p>
+            <p>As the world continues the battle against COVID-19.1 hope this can serve as a small archive of the special time that is the first half of 2020. </p>
+            <br> <hr size=4 noshade>
+          </div>
+
+          <div class="bib">
+            <h2>Bibliography</h2>
+            <p>Mello, Gabriela, and Rodrigo Viga Gaier. "Brazil Lockdowns, Attacked by Bolsonaro, Begin to Slip." Reuters, April 10, 2020. Accessed April 21, 2020. <a href="https://www.reuters.com/article/us-health-coronavirus-brazil-lockdown/brazil-lockdowns-attacked-by-bolsonaro-begin-to-slip-idUSKCN21R30B">https://www.reuters.com/article/us-health-coronavirus-brazil-lockdown/brazil-lockdowns-attacked-by-bolsonaro-begin-to-slip-idUSKCN21R30B.</a></p>
+            <p>Mohammed, Omar, and Duncan Miriri. "African Nations Close Borders, Cancel Flights to Contain Coronavirus Spread." Reuters, March 16, 2020. Accessed April 21, 2020. <a href="https://www.reuters.com/article/us-health-coronavirus-africa/african-nations-close-borders-cancel-flights-to-contain-coronavirus-spread-idUSKBN2120YR">https://www.reuters.com/article/us-health-coronavirus-africa/african-nations-close-borders-cancel-flights-to-contain-coronavirus-spread-idUSKBN2120YR.</a></p>
+            <p>Reuters (Vinilius). "UPDATE 1-Lithuania to Close Border to Foreigners." March 14, 2020. Accessed April 21, 2020. <a href="https://www.reuters.com/article/health-coronavirus-lithuania-borders/update-1-lithuania-to-close-border-to-foreigners-idUSL8N2B70W0">https://www.reuters.com/article/health-coronavirus-lithuania-borders/update-1-lithuania-to-close-border-to-foreigners-idUSL8N2B70W0.</a></p>
+            <p>Rich, Mokoto, Hisako Ueno, and Makiko Inoue. "Japan Declared a Coronavirus Emergency. Is It Too Late?" The New York Times, April 7, 2020. Accessed April 21, 2020. <a href="https://www.nytimes.com/2020/04/07/world/asia/japan-coronavirus-emergency.html">https://www.nytimes.com/2020/04/07/world/asia/japan-coronavirus-emergency.html.</a></p>
+            <p>Salcedo, Andrea, Sanam Yar, and Gina Cherelus. "Coronavirus Travel Restrictions, across the Globe." The New York Times, April 15, 2020. Accessed April 21, 2020. <a href="https://www.nytimes.com/article/coronavirus-travel-restrictions.html">https://www.nytimes.com/article/coronavirus-travel-restrictions.html.</a></p>
+            <p>Taylor, Derrick Bryson. "A Timeline of the Coronavirus Pandemic." The New York Times, April 2020. Accessed April 21, 2020. <a href="https://www.nytimes.com/article/coronavirus-timeline.html">https://www.nytimes.com/article/coronavirus-timeline.html.</a></p>
+            <br><br><br>
+          </div>
+        </body>
+      </html>
