@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        margin: 0 auto;
+        font-family: Charter;
+        font-size: 18px;
+        color: #1c1c1c;
+        background: #eee;
+      }
+      a {
+        color: #c46210;
+      }
+      h1 {
+        font-size: 200%;
+        font-family: 'Raleway', sans-serif;
+      } .hero-text h2 {
+        font-size: 125%;
+        font-family: 'Raleway', sans-serif;
+      }
+
+      .regular {
+        width: 45em;
+        margin: 0 auto;
+        padding: 1em;
+        line-height: 1.7;
+      }
+
+      .bib {
+        width: 40em;
+        margin: 0 auto;
+        padding: 1em;
+        line-height: 1.7;
+        font-size: 16px;
+      }
+
+      .img {
+        width: 35em;
+        margin: 0 auto;
+        padding: 1em;
+        line-height: 1.7;
+      }
+
+      /* Slideshow container */
+      .slideshow-container {
+        position: relative;
+        background: #ede9df;
+        width: 50em;
+        margin: 0 auto;
+        border-style: double;
+        border-color: #362b11;
+      }
+
+      /* Slides */
+      .mySlides {
+        display: none;
+        padding: 80px;
+        text-align: center;
+      }
+
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -30px;
+        padding: 16px;
+        color: #888;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        position: absolute;
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+      }
+
+      /* The dot/bullet/indicator container */
+      .dot-container {
+        text-align: center;
+        padding: 20px;
+        background: #ddd;
+        width: 48.25em;
+        margin: 0 auto;
+      }
+
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      /* Add a background color to the active dot/circle */
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+
+      body, html {
+          height: 100%;
+      }
+
+      /* The hero image */
+      .hero-image {
+        /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/1227513/pexels-photo-1227513.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+
+        /* Set a specific height */
+        height: 70%;
+
+        /* Position and center the image to scale nicely on all screens */
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+
+      /* Place text in the middle of the image */
+      .hero-text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+      }
+
+      .hero-top {
+        width: 45em;
+      }
+    </style>
+  </head>
+  <body>
+      <div class="hero-image">
+        <div class="hero-text">
+          <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+          <div class ="hero-top">
+          <h1>Anger and Distrust: </h1>
+          <h2> <i>North Carolina’s Divided Culture Shown Through the Lens of COVID-19 </i> </h2>
+          </div>
+          <br> <hr width=60%>
+          <h3> Davis Barrow </h3>
+        </div>
+      </div>
+      <div class="regular">
+        <h2> Introduction </h2>
+        <p> North Carolina is separated into three primary regions: the piedmont, coastal plains, and mountains. For the purposes of this study, the coastal plains will be referred to as “eastern NC,” a more commonly-used term. The piedmont, which is the largest region by population, encompasses the metropolitan areas of Raleigh and Charlotte. Eastern NC primarily consists of rural farming towns.</p>
+        <p>On a drive through Eastern NC, one would pass through miles and miles of open land filled with rows of tobacco, cotton, or other various “cash crops.” Dilapidated tobacco barns and small, tired-looking homes would appear in sparse clusters alongside the occasional barbecue restaurant or shiny new Ford dealership. During state and national elections, this region tends to vote for more conservative candidates. </p>
+        <p> While there is much open space in the Piedmont, the vast majority of the population is clustered in Charlotte or Raleigh NC. These are midsize cities (comparable in population to
+      Atlanta or Austin 20-30 years ago). This region usually votes for more moderate or liberal national and state candidates. </p>
+        <p> As the cities of Raleigh and Charlotte have grown, a stronger cultural divide has emerged between the regions of Eastern NC and the Piedmont. “On the street” in Raleigh or Charlotte, it is not uncommon to hear white liberal families discussing their dissatisfaction with the Republican-dominated State Legislature. Many of the districts in Eastern NC are responsible for
+      Davis Barrow this Republican-dominated Legislature, which is responsible for passing controversial bills such as HB-2, <a href="https:// www.ncleg.net/Sessions/2015E2/Bills/House/PDF/H2v3.pdf"> commonly known as the “2017 North Carolina Bathroom Bill.” </a></p>
+        <p> While the cultural divide between Eastern NC and the Piedmont could be an issue of class discrepancies (cities tend to have more wealth than rural areas), this study seeks to  determine what cultural differences, if any, exist between one class of individuals in the Piedmont and Eastern NC. The Piedmont will be represented by results from Raleigh, NC.
+      Eastern NC will be represented by results from small towns including Spring Hope, Wilson, Rocky Mount, New Bern, Goldsboro, and others. All these towns were selected because they are
+      rural, but simultaneously well-populated enough to have numerous big-name retail establishments. Working class, automotive workers were selected as the target group of this
+      study as these individuals fill the following criteria: 1) They are an essential business and will remain open during COVID-19 2) Most of these workers make around the U.S. Median Income 3) People working in the automotive industry are still significantly impacted by the lack of people driving due to COVID-19. </p>
+        <p> For this study, automotive workers were considered a “community.” This study hoped to avoid comparing political beliefs of a rich city community to a poorer country community. By targeting automotive workers, the voters would all make similar salaries, be surrounded by similar environments (parts, cars, toxic fluids, waste, etc.), and possibly have similar interests, as many individuals choose to work for a mechanic shop, body shop, or auto parts store due to a personal passion for cars.</p>
+        <p> This study initially planed to demonstrate results through a collage of interviews. However, due to privacy concerns of the interviewed individuals and their employers, this study will instead display results through statements (derived from previous interviews) on which employees voted. Additionally, an anonymous transcript of an interview will be available as an appendix. </p>
+        <p> 16 Various locations were visited and 53 employees were initially interviewed. These
+      locations included the following: Discount Tire, Firestone, O’Reilly’s Auto Parts, Advance Auto Parts, Auto Zone, Napa Auto Parts, Tunstall-Williams Body Shop, Kenny Hawkins Automotive, and Henry’s Muffler Shop. Well into the development of the project, phone calls and/or emails from managers and owners of the aforementioned places of business requested their employees’ interviews be permanently erased and not used in any online publication (which conflicted with the plan for this report). Thus, a new sample of 20 employees were prompted to vote on their feelings about statements derived from the first sample’s interviews.
+        </p>
+      </div>
+      <div class="regular">
+        <h2> Statements:</h2>
+        <p> 22 Employees (10 from Piedmont and 12 from Eastern NC) were asked whether they strongly agree, agree, disagree, strongly disagree, or feel neutral towards the following statements: </p>
+
+      <p> All voters are listed in the “Sources” section. The vast majority of businesses insisted we could not publish employees’ names without approval from the corporate media team. A policy of anonymity was used in accordance with industry standards.</p>
+      </div>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <!-- Full-width slides/quotes -->
+        <div class="mySlides">
+          <q>The state-wide restrictions resulting from COVID-19 are beneficial to N.C.</q> <br> <br>
+          <p class="NC">Eastern NC Votes: (strongly agree 4, agree 2, disagree 2, strongly disagree 4, neutral, decline)</p>
+          <p class="Pied">Piedmont Votes: (strongly agree 9, agree, disagree 1, strongly disagree, neutral, decline)</p>
+        </div>
+        <div class="mySlides">
+          <q>The state-wide restrictions resulting from COVID-19 are beneficial to me.</q> <br> <br>
+          <p class="NC">Eastern NC Votes: (strongly agree, agree, disagree, strongly disagree 12, neutral, decline)</p>
+          <p class="Pied">Piedmont Votes: (strongly agree, agree 6, disagree, strongly disagree 4, neutral, decline)</p>
+        </div>
+        <div class="mySlides">
+          <q>Social distancing is an effective method for stemming the spread of COVID-19.</q> <br> <br>
+          <p class="NC">Eastern NC Votes: (strongly agree 8, agree, disagree, strongly disagree, neutral, decline 4)</p>
+          <p class="Pied">Piedmont Votes: (strongly agree 10, agree, disagree, strongly disagree, neutral, decline)</p>
+        </div>
+        <div class="mySlides">
+          <q>I am doing my best to participate in the efforts of social distancing.</q> <br> <br>
+          <p class="NC">Eastern NC Votes: (strongly agree, agree 3, disagree 3, strongly disagree, neutral 6, decline)</p>
+          <p class="Pied">Piedmont Votes: (strongly agree 6, agree 4, disagree, strongly disagree, neutral, decline)</p>
+        </div>
+        <div class="mySlides">
+          <q>I am still working throughout COVID-19.</q> <br> <br>
+          <p class="NC">Eastern NC Votes: (strongly agree 12, agree, disagree, strongly disagree, neutral, decline)</p>
+          <p class="Pied">Piedmont Votes: (strongly agree 10, agree, disagree, strongly disagree, neutral, decline)</p>
+        </div>
+        <div class="mySlides">
+          <q>I want to intentionally act against the calls of our Governor and State to socially distance ourselves.</q> <br> <br>
+          <p class="NC">Eastern NC Votes: (strongly agree 1, agree 1, disagree 6, strongly disagree 3, neutral 1, decline)</p>
+          <p class="Pied">Piedmont Votes: (strongly agree, agree, disagree, strongly disagree 10, neutral, decline)</p>
+        </div>
+        <div class="mySlides">
+          <q>President Donald Trump is doing a satisfactory job of handling the COVID-19 pandemic.</q> <br> <br>
+          <p class="NC">Eastern NC Votes: (strongly agree 8, agree 1, disagree, strongly disagree 1, neutral 2, decline)</p>
+          <p class="Pied">Piedmont Votes: (strongly agree, agree 1, disagree 8, strongly disagree, neutral 1, decline)</p>
+        </div>
+        <div class="mySlides">
+          <q>I feel that Dr. Fauci is taking this pandemic too seriously and should be fired.</q> <br> <br>
+          <p class="NC">Eastern NC Votes: (strongly agree 2, agree 4, disagree 4, strongly disagree 1, neutral 1, decline)</p>
+          <p class="Pied">Piedmont Votes: (strongly agree, agree, disagree 8, strongly disagree 1, neutral 1, decline)</p>
+        </div>
+        <div class="mySlides">
+          <q>I wish President Donald Trump would follow Dr. Fauci’s advice more closely.</q> <br> <br>
+          <p class="NC">Eastern NC Votes: (strongly agree, agree 6, disagree 5, strongly disagree, neutral 1, decline)</p>
+          <p class="Pied">Piedmont Votes: (strongly agree, agree 9, disagree, strongly disagree, neutral 1, decline)</p>
+        </div>
+        <div class="mySlides">
+          <q>President Donald Trump acted too slowly in responding to COVID-19.</q> <br> <br>
+          <p class="NC">Eastern NC Votes: (strongly agree, agree, disagree 8, strongly disagree 4, neutral, decline)</p>
+          <p class="Pied">Piedmont Votes: (strongly agree 2, agree 7, disagree, strongly disagree, neutral 1, decline)</p>
+        </div>
+        <div class="mySlides">
+          <q>COVID-19 has caused severe financial harm to my family.</q> <br> <br>
+          <p class="NC">Eastern NC Votes: (strongly agree 12, agree, disagree, strongly disagree, neutral, decline)</p>
+          <p class="Pied">Piedmont Votes: (strongly agree 9, agree 1, disagree, strongly disagree, neutral, decline)</p>
+        </div>
+        <div class="mySlides">
+          <q>COVID-19 is a 'liberal hoax.'</q> <br> <br>
+          <p class="NC">Eastern NC Votes: (strongly agree, agree 8, disagree 4, strongly disagree, neutral, decline)</p>
+          <p class="Pied">Piedmont Votes: (strongly agree, agree, disagree, strongly disagree 10, neutral, decline)</p>
+        </div>
+        <div class="mySlides">
+          <q>COVID-19 is a virus created by a Chinese laboratory.</q> <br> <br>
+          <p class="NC">Eastern NC Votes: (strongly agree 1, agree 6, disagree, strongly disagree 4, neutral 1, decline)</p>
+          <p class="Pied">Piedmont Votes: (strongly agree, agree 3, disagree 6, strongly disagree, neutral 1, decline)</p>
+        </div>
+        <div class="mySlides">
+          <q>The United States should blame China for COVID-19.</q> <br> <br>
+          <p class="NC">Eastern NC Votes: (strongly agree 8, agree 1, disagree 2, strongly disagree, neutral 1, decline)</p>
+          <p class="Pied">Piedmont Votes: (strongly agree 2, agree, disagree 8, strongly disagree, neutral, decline)</p>
+        </div>
+        <div class="mySlides">
+          <q>I think racism toward Asian Americans as a result from COVID-19 is abhorred.</q> <br> <br>
+          <p class="NC">Eastern NC Votes: (strongly agree, agree 7, disagree 3, strongly disagree 2, neutral, decline)</p>
+          <p class="Pied">Piedmont Votes: (strongly agree 8, agree 1, disagree 1, strongly disagree, neutral, decline)</p>
+        </div>
+        <div class="mySlides">
+          <q>We need to reopen the United States economy on May 1.</q> <br> <br>
+          <p class="NC">Eastern NC Votes: (strongly agree, agree 4, disagree, strongly disagree, neutral 8, decline)</p>
+          <p class="Pied">Piedmont Votes: (strongly agree, agree 4, disagree 6, strongly disagree, neutral, decline)</p>
+        </div>
+        <!-- Next/prev buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <!-- Dots/bullets/indicators -->
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+        <span class="dot" onclick="currentSlide(11)"></span>
+        <span class="dot" onclick="currentSlide(12)"></span>
+        <span class="dot" onclick="currentSlide(13)"></span>
+        <span class="dot" onclick="currentSlide(14)"></span>
+        <span class="dot" onclick="currentSlide(15)"></span>
+        <span class="dot" onclick="currentSlide(16)"></span>
+      </div>
+
+      <div class="img">
+        <h4>Figure #1: Comparing Eastern NC to Piedmont on the most influential local statement: “The state-wide restrictions resulting from COVID-19 are beneficial to N.C.”</h4>
+        <img src= "https://pbs.twimg.com/media/EDyQeqAW4AIUv1H.jpg" alt="blank" style="width:100%">
+      </div>
+
+      <div class="regular">
+        <h2>Analysis:</h2>  <h5>All data derived from Statements section and Figure #1. Sources included in Sources. </h5>
+        <p>Within the community of automotive workers, there were substantial amounts of overlap in behavior, even in light of potential differences in political opinions/beliefs about the virus. On first glance, it is apparent that hardly any respondents took the option to “decline” a question. Except for four “decline” votes by Eastern NC employees in response to the statement about social distancing being effective, every employee chose to answer every question. This sheds insight into how passionate many of the members of the automotive community are about politics. The willingness with which these voters responded to the statements reveals how eager these workers were to convey their opinions.</p>
+        <p> Figure #1 demonstrates how voters in Eastern NC tended to have more diversity of opinions than voters in the Piedmont. The Piedmont voters would typically submit similar opinions while the Eastern NC voters were more equivocal. For example in the statements about
+      racism and blaming China for this situation, the Eastern NC voters answered a broad spectrum of  agreements and disagreements, while Piedmont voters tended to vote similarly condemning racism or blame.</p>
+        <p>On the topic of questioning authority, Piedmont voters were much more likely to believe
+      what they had been told than Eastern NC voters. For example, 2/3 of Eastern NC voters agreed
+      with the statement about the Coronavirus being a “liberal hoax,” while every Piedmont voter
+      disagreed with this statement. This sharp difference in responses cannot simply be attributed to political leanings/views—there are almost certainly Republicans and Democrats in each pool.</p>
+        <p> The Piedmont voters were more likely to determine that statewide suffering for the common good is beneficial to individuals than Eastern NC voters. All the Eastern NC voters suggested the statewide restriction was not beneficial to themselves, while 3/5 of Piedmont voters suggested they were beneficial to themselves. </p>
+        <p>While the interviews would have been helpful for better understanding the moods and feelings of the various employees, the fixed statements allowed the study to draw clearer conclusions about peoples’ thoughts. Instead of an infinitely broad spectrum of thought, the statements stratified the results in a very efficient manner. </p>
+        <p> This study demonstrates how even across one community of automotive workers, core beliefs about the good of society vs. the good of the individual, the role of governmental authority, and the prevalence of diverse opinions can vary extremely broadly. At the same time,
+      the underlying passion to share their views was present in almost every worker. This study suggests there may be some underlying cultural differences between Eastern NC and the Piedmont. Future studies could narrow down/analyze the source of these varying cultures.
+      Eastern NC is home to numerous military bases and countless farms, while the Piedmont houses
+      high-tech companies and universities. While this study offers some conclusions about the
+      cultural differences between Eastern NC and the Piedmont, it further enriches the questions of
+      how we stratify/outline communities. Some future questions to be explored include, “Must communities share the same culture?” and “How do cultural divides affect our communities?” </p>
+      </div>
+      <div class="regular">
+        <h2>Appendix:</h2>
+      <h5>Transcript #1: Interview with Mike Stephenson at the Village Hardware Store in Spring Hope,
+      NC on April 14, 2020 (name of interviewee and place of employment are pseudonyms by request of the employer). </h5>
+        <p> Me: Alright sir, thank you so much for taking the time to talk to me. I just want to ask you a few
+      questions. This is just going to be a conversation about, you know, how you feel about the coronavirus. Just a couple questions. Let me start with this: How have you guys been holding up? Has your family been safe through this whole endeavor? </p>
+        <p> Mike: Ah...Well...It started off alright but after a few...after the liberal media started scaring
+      away a few of these old folks, and uh, we started losing business. Ah it went downhill a bit. Think I’m ‘bout to get let go from the ****. </p>
+        <p> Me: So— </p>
+        <p> Mike: It’s not that great.</p>  <p> Me: Is **** laying off a lot of employees? </p>
+        <p> Mike: Yeah...uh...my buddy, ****, got laid off last week. It’s not that great. But. Yeah. </p>
+        <p> Me: Sure—- </p>
+        <p> Mike: Other than that, not really. My wife...she’s still working. </p>
+        <p> Me: Is this going to be a very financially challenging time for you and your coworkers here at ****? In what ways will this be a tough time for you guys? </p>
+        <p>Mike: Well...me and all my coworkers and colleagues. This is gonna be a tough time for all of
+      us. What the hell. [Opens a can of chewing tobacco, inserts into mouth, and begins to spit]. At the same time. This is a good lip right here. At the same time, honestly, it’s not even that big of a fucking deal. [Inserts more Tobacco into lip]. </p>
+        <p> Me: Well, Mike, let me ask you how do you feel about our local policies here in North Carolina, both on a state and county level? Um...do you think our state is doing a good job? Are you satisfied? </p>
+        <p> Mike: Ahh...I think the policies aren’t that great. I think what our governor is doing is not that great. Well, I don’t think it’s going that great. Me and my buddies not going off well because of this.</p>
+        <p> Me: Sure. </p>
+        <p> Mike: Yeah. [Unintelligible]</p>
+        <p> Me: What do you think about the statewide stay-at-home order? Is this a reasonable policy? Are you pleased by it? </p>
+        <p> Mike: [Spitting tobacco] Not pleased with it, because we gotta go out, we gotta work. It’s kinda stupid to stand six feet away from my buddy if we’re gonna go to a restaurant, go anywhere, do anything. </p>
+        <p> Me: Understood. What do you think is the ideal way to handle this situation? </p>
+        <p>Mike: I think that maybe we should still keep some legislation in mind...with ah...you know... keep larger groups from...maybe a concert is not a great idea. But I think they’re going way overboard with what they’re doing. </p>
+        <p> Me: I gotcha.</p>
+        <p> Mike: [Spitting tobacco] But I think in general, this is all just complete and total bull crap. At the end of the day, not that many people are affected by it, except for people that are just workin’ hard. All these small businesses out here...all going out of business because of this. </p>
+        <p> Me: Sure.</p>
+        <p> Mike: Long term it’s just gonna kill our economy. Killing me killing my buddies. And it’s not doing anything great for us. But at the same time, the flu kills 50,000 people per year, where the Coronavirus has only killed 10,000 people in the US— </p>
+        <p> Me: Sure </p>
+        <p> Mike: It doesn’t make any...any sense. </p>
+        <p> Me: Do you view the Coronavirus policies as a political issue? Is everybody on the same team? </p>
+        <p> Mike: I think absolutely not...it’s not the same team. I think these people...these liberals are trying to pin this on Mr. Trump so he doesn’t win in the next election—- </p>
+        <p> Me: Gotcha </p>
+        <p> Mike: He’s done all this hard work to make sure our economy’s great. And they’ve taken that and they’ve [unintelligible] that with their social distancing thing. And he’s doing the best he possibly can. And he’s making sure everything’s going alright. And he’s getting funding to help out with the disaster. [Spits tobacco juice] And it’s just...to some it’s just hurting ‘em. </p>
+        <p> Me: Well, I sincerely appreciate your time, sir. Best of luck to you and your family. </p>
+        <p> Mike: Thank you, sir. </p>
+        <p> [END] </p>
+          <br> <hr size=4 noshade>
+        </div>
+      <div class="bib">
+        <h2>Sources:</h2>
+        <h4>Transcribed Interview:</h4>
+        <p>Anonymous. Interview by the author. Spring Hope, NC. April 14, 2020.</p>
+        <h4>Eastern, North Carolina Votes:</h4>
+        <p>Anonymous. Interview by the author. Spring Hope, NC. April 14, 2020. <br>Anonymous. Interview by the author. Wilson, NC. April 10, 2020. <br>Anonymous. Interview by the author. Wilson, NC. April 10, 2020. <br> Anonymous. Interview by the author. Wilson, NC. April 10, 2020. <br> Anonymous. Interview by the author. Rocky Mount, NC. April 11, 2020. <br> Anonymous. Interview by the author. New Bern, NC. April 12, 2020. <br> Anonymous. Interview by the author. Goldsboro, NC. April 12, 2020. <br> Anonymous. Interview by the author. Goldsboro, NC. April 12, 2020.<br> Anonymous. Interview by the author. Goldsboro, NC. April 12, 2020. <br> Anonymous. Interview by the author. LaGrange, NC. April 13, 2020. <br>Anonymous. Interview by the author. Ayden, NC. April 14, 2020. <br> Anonymous. Interview by the author. Ayden, NC. April 14, 2020. </p>
+        <h4> Piedmont, North Carolina Votes:</h4>
+        <p>Anonymous. Interview by the author. Raleigh, NC. April 9, 2020. <br>
+      Anonymous. Interview by the author. Raleigh, NC. April 9, 2020. <br>
+      Anonymous. Interview by the author. Raleigh, NC. April 9, 2020. <br>
+      Anonymous. Interview by the author. Raleigh, NC. April 9, 2020. <br>
+      Anonymous. Interview by the author. Raleigh, NC. April 9, 2020. <br>
+      Anonymous. Interview by the author. Raleigh, NC. April 9, 2020. <br>
+      Anonymous. Interview by the author. Raleigh, NC. April 9, 2020. <br>
+      Anonymous. Interview by the author. Cary, NC. April 10, 2020. <br>
+      Anonymous. Interview by the author. Cary, NC. April 10, 2020. <br>
+      Anonymous. Interview by the author. Garner, NC. April 14, 2020. <br>
+        </p>
+        <h4> Bathroom Bill: </h4>
+      <p> An Act to Provide For Single-Sex Multiple Occupancy Bathroom and Changing Facilities in Schools and Public Agencies and to Create Statewide Consistency in Regulation of Employment and Public Accommodations, H.R. 2, 2016 Gen. Assem., Second Extra (N.C.). Accessed April 22, 2020. <a href="https://www.ncleg.net/Sessions/2015E2/Bills/House/PDF/H2v3.pdf">https://www.ncleg.net/Sessions/2015E2/Bills/House/PDF/H2v3.pdf. </a></p>
+      </div>
