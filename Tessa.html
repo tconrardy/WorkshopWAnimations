@@ -2,6 +2,7 @@
 <html>
     <head>
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- <link rel="stylesheet" type="text/css" href="mystyle.css"> -->
       <style>
         html {
           scroll-behavior: smooth;
@@ -29,9 +30,19 @@
 
         }
 
-        .beltitem {
+        /* .beltitem {
           padding-left: 10%;
           padding-right: 10%;
+        } */
+
+        .beltitemleft {
+          padding-left: 20%;
+          padding-right: 2%;
+        }
+
+        .beltitemright {
+          padding-left: 2%;
+          padding-right: 20%;
         }
 
         .animation {
@@ -66,14 +77,45 @@
           font-size:2vw;
         }
 
+        button {
+          padding: 1em;
+          margin-left: 80%;
+          /* Aaaaaaah this is bad */
+          color: #fff !important;
+          text-transform: uppercase;
+          text-decoration: none;
+          background: black;
+          padding: 20px;
+          border-radius: 50px;
+          display: inline-block;
+          border: none;
+          transition: all 0.4s ease 0s;
+        }
 
-
+        button:hover {
+          text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+          -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+          -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+          transition: all 0.4s ease 0s;
+        }
 
       </style>
+
+      <script>
+          const ids = ["story1", "story2", "story3", "story4", "story5", "story6", "story7", "story8", "story9", "story10", "story11", "story12", "story13", "story14", "story15", "story16", "story17", "story18", "story19", "story20", "story21", "story22", "story23", "story24", "story25", "story26", "story27", "story28", "story29", "story30", "story31", "story32", "story33", "story34", "story35", "story36", "story37", "story38", "story39", "story40", "story41", "story42", "story43"]
+          var button = document.getElementById("randomizer")
+          console.log(`button: ${button}`)
+          button.addEventListener("click", function() {
+            const newID = ids[Math.floor(Math.random() * ids.length)]
+            console.log(newID)
+            document.getElementById(newID).scrollIntoView()
+          })
+      </script>
     </head>
     <body>
       <div class="navbar">
         <h1>The Workshop at Andover</h1>
+        <button id="randomizer">Go to a random story</button>
 
         <!-- <div class='left'> <a href="#menu">Menu</a> </div>
         <h1>The Workshop at Andover</h1>
@@ -88,7 +130,7 @@
           </div>
         </div>
 
-        <div class="beltitem" id="intro">
+        <div class="beltitemleft" id="intro">
           <p>
             &emsp;I really make an effort to try to talk to customers (or “guests,” as we’re supposed to call them,) as I’m ringing up their groceries. I’ve been really surprised to see how personal many people get when you show an interest. Maybe it’s because we’re all cooped up with family and it’s nice to have a stranger to talk to? Take yesterday for example. A soon-to-be grandmother vented about her daughter, who was due to have a baby last Friday. “If she’s much later, then something might be wrong, and I’m not sure if the hospitals will have the capacity to handle it.” It took a lot of will power to just keep bagging her groceries instead of giving her a hug. Another man’s eyes lit up when I asked about his West Point hat. (Pierce wants to go into the military, so it caught my eye.) He told me a story about how his daughter had been recruited to attend West Point, but changed her mind after she attended a summer training camp there. “She didn’t think that she could do it. I still think that she could have done it,” he said proudly. Later that day, I asked a man if he had any cats. (It was a fairly rhetorical question; I had already scanned three bags of cat food.) His eyes lit up and he told me that he rescued strays. He currently had two cats. (Or was it three? I don’t remember.) Later, a woman with a Russian accent came through. I asked how she was doing with social distancing. She said that she was feeling a little stir crazy but ultimately fine, and asked how I was doing. I replied that I was sad that classes were online, and how upset I was that I couldn’t attend my regular history or Russian classes. “You take Russian?” she asked. “Да, я говорю по-русски,” I replied. We chatted in Russian for a bit, and I found that she was from an area of Siberia not far from where our Learning in the World trip to Russia went last summer. (I also found that my Russian was far rustier than I realized!) I also checked out an older couple that confused me a bit. The woman was outfitted in a face mask, gloves, long sleeves, and a pack of disinfectant wipes. The man who accompanied her was wearing no protective gear whatsoever. I didn’t ask, but wondered to myself how two people could be shopping together and have such different attitudes towards the virus. I rang up a mom who said that she had five kids at home. Some were struggling with online elementary school, others were struggling because of the shortage of baby wipes. I rang up another woman with almost two cartfuls of snack foods. “Stocking up on snacks for home?” I asked. “No, my office is making care packages for all of the local law enforcement who still have to work during the pandemic,” she replied. I was struck that, after spending much of my day enforcing purchase limits on people hoarding for themselves, someone was buying food for others. She had more packs of goldfish than she was allowed, but I didn’t say anything. And those are just the customers that I remember off the top of my head from yesterday! Maybe it’s just because I’m a fan of short stories, but I think that there’s something powerful about these little snapshots that I get of people’s lives.
           </p>
@@ -98,7 +140,7 @@
           <img src="Spray.gif" alt="spray bottle" align="left" width="100%">
         </div>
 
-        <div class="beltitem" id="story1">
+        <div class="beltitemright" id="story1">
           <p>&emsp;One of the first people to walk down the aisle of lane ten that day was an elderly woman with a cart full of groceries. I went through my normal routine of cleaning down the belt and apologizing for the wait.</p>
           <p>“Sorry about that, we’re just trying to keep everything clean. How are you?”</p>
           <p>“I’m good, how are you?”</p>
@@ -113,7 +155,7 @@
           <img src="Wipe.gif" alt="wipe" align="right" width="100%">
         </div>
 
-        <div class="beltitem" id="story2">
+        <div class="beltitemleft" id="story2">
           <p>&emsp;A while later, a man came down my aisle with a cartful of groceries. He looked to be stocking up for a while. I scanned some meat, boxes of macaroni, and a couple boxes of cereal.</p>
           <p>“Do you have kids at home?”</p>
           <p>“Two. They’re going nuts.”</p>
@@ -126,7 +168,7 @@
           <img src="Water.gif" alt="water" align="left" width="100%">
         </div>
 
-        <div class="beltitem" id="story3">
+        <div class="beltitemright" id="story3">
           <p>&emsp;	A woman approached the belt with an unusually full cart. Her cartload did not, however, consist of the food or household essentials that most of the other guests had. Her cart was overflowing with Easter supplies. I rang up peeps, chocolate bunnies, candy eggs. I rang up two woven baskets and two packs of easter grass. I rang up water guns and toys and plastic easter eggs. I rang up clothing with bunnies and cutesy Easter puns on them.</p>
           <p>“Do you have kids at home?”</p>
           <p>“Yep!”</p>
@@ -139,7 +181,7 @@
           <img src="Easter.gif" alt="easter" align="left" width="100%">
         </div>
 
-        <div class="beltitem" id="story4">
+        <div class="beltitemleft" id="story4">
           <p>&emsp;	A man and his young daughter rolled their cart up. I wiped down the belt, and apologized for the wait. I felt especially bad since they had already been waiting for a while behind the previous shopper: the woman with the Easter supplies. </p>
           <p>“That’s okay. We just appreciate that you’re here,” the man said. It was a relief to hear.</p>
           <p>&emsp; I scanned and bagged their few groceries before encountering an Amazon Fire TV stick. Like most electronics, the remote had a pesky anti-theft device around it. My heart dropped. I knew that I was about to make this man and his daughter’s already long wait even longer; no matter how many times anyone teaches me, I always struggle with removing security devices. I kept my cool, and unhooked the security device removal tool from its place at my register. I ran the edge of the tool along the notches on the security device and waited for a click. I heard the click, and tried to unlock the the package's security device. No dice. I tried again. And again. I fumbled with the box a few more times before flashing my lane light to flag down a manager. Eventually she came over, unlocked the security device — I felt ever so slightly better since she also struggled with it for a moment before popping it open — and left. I sheepishly scanned the remote and read the man his total. He swiped his credit card, and took his bags. As I was beginning to wipe down the belt for the next customer, he pulled a ten dollar bill out of his wallet and placed it on the counter. </p>
@@ -156,7 +198,7 @@
           <img src="Fire.gif" alt="fire" align="left" width="100%">
         </div>
 
-        <div class="beltitem" id="story5">
+        <div class="beltitemright" id="story5">
           <p>&emsp;A woman approached with a basket of groceries. I asked her how her day was, and she talked about the weather as I bagged her items. </p>
           <p>“Strange times that we live in,” she said.</p>
           <p>“How are you holding up with all of this craziness?” I asked.</p>
@@ -170,7 +212,7 @@
           <img src="Wipe.gif" alt="wipe" align="right" width="100%">
         </div>
 
-        <div class="beltitem" id="story6">
+        <div class="beltitemleft" id="story6">
           <p>&emsp;	As I finished up with a customer, I grabbed the cleaning solution and a new wipe. I was used to having to ask customers to wait to start loading their groceries onto the belt, but the man who was next in line was maintaining a hefty distance. His beard was pinched against his face by an N95 mask; he was definitely taking as many precautions as he could. I wiped down the belt as he waited back beyond the magazine rack. </p>
           <p>“Alrighty, you can start loading whenever you’re ready. Sorry about that wait, we’re just trying to keep everything clean.” </p>
           <p>&emsp; Normally a guest might respond with “oh, that’s alright,” or “okay.” The man didn’t say anything, but I didn’t think much of it. I started scanning his items.</p>
@@ -183,7 +225,7 @@
           <img src="Mask.gif" alt="mask" align="right" width="100%">
         </div>
 
-        <div class="beltitem" id="story7">
+        <div class="beltitemright" id="story7">
           <p>&emsp;	A couple approached my register with a basket of groceries. What struck me about them was that I actually recognized them. I had rung them up just a couple of days prior. They didn’t seem to remember me, but that was okay. They were just as friendly as they had been the first time. They asked if they could use a reusable basket that they had brought instead of plastic bags. I told them that yes, they could, but I wasn’t allowed to handle any reusable bags. The woman said that this was fine, and the man swung a basket up onto the bagging station to begin loading their groceries. I laughed out loud. The basket was about the same size and shape of a normal handheld basket that you’d use in a grocery store, except the basket was lined in recycled jeans to make the entire basket look like an enormous pair of jean shorts. They seemed excited that I enjoyed their basket. I rang up their groceries and wished them a nice day. </p>
         </div>
 
@@ -191,7 +233,7 @@
           <img src="Jeans.gif" alt="jeans" align="right" width="100%">
         </div>
 
-        <div class="beltitem" id="story8">
+        <div class="beltitemleft" id="story8">
           <p>&emsp;	A middle-aged woman approached with a cartful of groceries. We exchanged a couple of pleasantries, and I began scanning her groceries. It was a nice day, so she didn’t have a jacket on; just a Ringgold High hockey t-shirt.</p>
           <p>“Are you a hockey fan?” I asked.</p>
           <p>“Oh, both of my boys play. My son is a senior on Ringgold’s varsity team,” she replied.</p>
@@ -210,7 +252,7 @@
           <img src="Wipe.gif" alt="wipe" align="right" width="100%">
         </div>
 
-        <div class="beltitem" id="story9">
+        <div class="beltitemright" id="story9">
           <p>&emsp;I had almost finished bagging a woman’s groceries when she cut off what she was saying to comment on my work.</p>
           <p>“Thank you so much for filling them so full; normally I’d use reusable bags, but I’m glad to use as few plastic ones as possible since we’re not allowed to use the reusable ones,” she said with a smile.</p>
           <p>“Oh, well you’re actually allowed to bring in reusable bags, you just have to bag them yourself so that we’re not touching bags that might have been exposed to the virus,” I replied. Her eyes lit up.</p>
@@ -223,7 +265,7 @@
           <img src="Wipe.gif" alt="wipe" align="right" width="100%">
         </div>
 
-        <div class="beltitem" id="story9">
+        <div class="beltitemleft" id="story9">
           <p>&emsp;They both looked to be in their early thirties. First I scanned a foam baseball bat with plastic balls to match. Kids? Too soon to tell. I scanned some groceries before hitting a pack of juice boxes. Kids? I would think so…? I didn’t ask yet. Finally, five boxes of lunchables came down the belt.</p>
           <p>“Do you have kids at home?” I asked. The woman’s eyes lit up. </p>
           <p>“No!” she exclaimed with glee. “I just really love lunchables!” </p>
@@ -237,7 +279,7 @@
           <img src="Lunchable.gif" alt="lunchable" align="right" width="100%">
         </div>
 
-        <div class="beltitem" id="story10">
+        <div class="beltitemright" id="story10">
           <p>&emsp;A lanky man approached my aisle, whistling. He handed me the few items that he had, likely to save me the trouble of cleaning the belt. I would have to clean it anyway, but I appreciated the thought.</p>
           <p>“It’s nice to hear someone else whistling,” I said as I rang up his items. “I love to whistle; sometimes I do it without thinking about it. Bad habit!” I joked.</p>
           <p>“No, it’s a good habit,” he said with a smile. I’m not quite sure how to describe that smile. Mystical sounds too dramatic; it was simple, yet somehow seemed deeply wistful. One apt description comes to mind: my friends and I often joke that some people just give off “immortal vibes.” They walk or talk or smile with the quiet confidence and grace of someone who has been here for far longer than we have and knows that they will be here long after we’re gone. I’d like to think that I met some sort of wandering whistling demigod that Saturday morning. Or maybe he’s just a guy who wanted a Coke and a pack of Altoids. Who’s to say?</p>
@@ -247,7 +289,7 @@
           <img src="Spray.gif" alt="spray bottle" align="left" width="100%">
         </div>
 
-        <div class="beltitem" id="story11">
+        <div class="beltitemleft" id="story11">
           <p>&emsp;A man wearing a scarf and a mask rolled a packed cart of groceries up to the belt. I eyed two packs of paper towels at the back of the cart. I knew that I would have to confiscate one of them because of the one-item-per-person limit on paper products, but I didn’t know how he would respond and decided that I’d rather start out on the right foot.
           “Sorry about the wait,” I said as I cleaned down the belt. “Just trying to keep everything clean. How are you today?”</p>
           <p>&emsp;He nestled his mask below his chin.</p>
@@ -269,7 +311,7 @@
           <img src="Papertowel.gif" alt="papertowel" align="left" width="100%">
         </div>
 
-        <div class="beltitem" id="story12">
+        <div class="beltitemright" id="story12">
           <p>&emsp;I almost always ask people about their pets when I encounter pet food. Pets are like kids; people love talking about them. But asking someone whether they have kids can be a touchy subject. Pets are far less complicated. So when a woman loaded a bag of dog food onto the belt, I was thrilled.</p>
           <p>“Do you have a dog?” I asked.</p>
           <p>“Well, he’s not my dog,” she replied. “He’s my parents’ dog. I haven’t seen him since he was a puppy.”</p>
@@ -285,7 +327,7 @@
           <img src="Wipe.gif" alt="wipe" align="left" width="100%">
         </div>
 
-        <div class="beltitem" id="story13">
+        <div class="beltitemleft" id="story13">
           <p>&emsp;With people being home, being hungry, and being bored, there’s a lot of baking going on in Pittsburgh these days. Every day, I ring up boxes upon boxes of cake mix, bags upon bags of sugar, and more jumbo cartons of eggs than regular dozen-sized boxes. The woman unloading her groceries onto the conveyor belt was no exception. She had a big carton of eggs, some sugar, a couple of lemons, and two big bags of flour.</p>
           <p>“Doing some baking?” I asked.</p>
           <p>“I’m not much of a baker, but my daughter-in-law has really wanted to make lemon bars. I grabbed all of this stuff for her because she’s been having a hard time finding it anywhere else. Whole Foods has been out of flour for a week!” the woman replied. I was shocked, having been unaware that flour was in such short supply.</p>
@@ -296,7 +338,7 @@
           <img src="Lemon.gif" alt="lemon" align="left" width="100%">
         </div>
 
-        <div class="beltitem" id="story14">
+        <div class="beltitemright" id="story14">
           <p>&emsp;A man with a tattered baseball cap, a thick Carhartt jacket, and an N95 mask set his basket of groceries down on my belt. He was a familiar image to me —  I was used to seeing construction workers like him in masks like these on my dad’s job sites — but it was strange to see a man wearing such a mask not while painting or sanding, but buying groceries.</p>
           <p>&emsp;We exchanged a few pleasantries. He seemed like a nice enough guy. I began to scan his groceries.</p>
           <p>“It’s funny, I’m only used to seeing masks like that on my dad’s job sites,” I noted, as I bagged another item.</p>
@@ -308,7 +350,7 @@
           <img src="MaskLeft.gif" alt="maskleft" align="left" width="100%">
         </div>
 
-        <div class="beltitem" id="story15">
+        <div class="beltitemleft" id="story15">
           <p>&emsp;A man with a Pittsburgh Pirates sweatshirt came through my checkout lane.
           “It’s nice to see some Pittsburgh gear. I go to school up in Boston and see far too much Patriots and Red Sox gear for my liking,” I remarked.</p>
           <p>“Oh that’s unfortunate,” he replied. </p>
@@ -321,7 +363,7 @@
           <img src="Baseball.gif" alt="baseball" align="left" width="100%">
         </div>
 
-        <div class="beltitem" id="story16">
+        <div class="beltitemright" id="story16">
           <p>&emsp;I almost immediately saw the two bottles of hand soap towards the middle of the belt.
           “Ma’m,” I said, prompting the woman to look up from the items that she was loading onto the conveyor belt. “I’m so sorry, but we’re only allowing each guest to purchase one bottle of hand soap per visit right now,” I said. </p>
           <p>“Oh, okay, sorry. That’s fine,” she replied. She rummaged through the cart for a few moments. “Are there limits on these?” she asked, holding up four small boxes. I squinted, but couldn’t see them clearly all the way at the end of the belt.</p>
@@ -338,7 +380,7 @@
           <img src="Tylenol.gif" alt="tylenol" align="left" width="100%">
         </div>
 
-        <div class="beltitem" id="story17">
+        <div class="beltitemleft" id="story17">
           <p>&emsp;Not long after I may have accidentally terrified the mother of a 15-month-old with my tale of partial deafness, a man brought an armful of groceries to my checkout lane.
           “How are you today?” I asked.</p>
           <p>“Good,” he replied.</p>
@@ -353,7 +395,7 @@
           <img src="Wipe.gif" alt="wipe" align="left" width="100%">
         </div>
 
-        <div class="beltitem" id="story18">
+        <div class="beltitemright" id="story18">
           <p>&emsp;	Two elderly women wheeled a cart down my checkout lane. They looked like two perfectly normal old ladies, aside from the fact that they were wearing perfectly matching outfits. Both sported white pants, a pink sweater with a green collared shirt underneath, matching short haircuts, and identical easter basket brooches on their left sides of their chests.</p>
           <p>“I love your outfits,” I said with a laugh. The women jumped at the comment.</p>
           <p>“Oh, well we just love dressing up together,” said the taller of the two.</p>
@@ -368,7 +410,7 @@
           <img src="Wipe.gif" alt="wipe" align="left" width="100%">
         </div>
 
-        <div class="beltitem" id="story19">
+        <div class="beltitemleft" id="story19">
           <p>&emsp;For the second time during my time as a cashier, a guest forgot something in the bagging area. The first time, it had been the man who forgot his Amazon fire stick, but this customer had left something far more precious in the era of Coronavirus: a pack of toilet paper.</p>
           <p>“Excuse me one moment ma’m, I’m just going to try and catch that man before he leaves without his toilet paper." I tucked the pack under my arm and darted out the door. </p>
           <p>&emsp;I scanned the parking lot and, just when I was worried that I might have lost him, saw him pushing a cart towards the edge of the lot. I sprinted across the lot and offered him the pack of toilet paper.</p>
@@ -380,7 +422,7 @@
           <img src="Wipe.gif" alt="wipe" align="left" width="100%">
         </div>
 
-        <div class="beltitem" id="story20">
+        <div class="beltitemright" id="story20">
           <p>&emsp;An elderly man began loading his groceries onto the belt. He had patchy white hair, sharp eyes, and a newspaper-patterned mask.</p>
           <p>“I love your mask!” I said.</p>
           <p>“Why thank you. My father was a newspaper writer, so I have a great deal of respect for the press,” the man replied.</p>
@@ -396,7 +438,7 @@
           <img src="Mask.gif" alt="mask" align="right" width="100%">
         </div>
 
-        <div class="beltitem" id="story20">
+        <div class="beltitemleft" id="story20">
           <p>&emsp;Every once and a while, I have to take a couple gallons of water or a few bottles of hand soap from a customer who has too many of a high-demand pandemic item. This woman, however, had none of those normal pandemic delicacies. She had probably 50 packets on the conveyor belt. I held one up to see what it was. Yeast.</p>
           <p>“That’s a lot of yeast,” I remarked, nodding to the pile of packets on the belt.</p>
           <p>“Well, see,” the woman replied, “I’m shipping them to my mother in Alabama. They’re all out of bread, but they’re also all out of yeast. I figure that if I get her the yeast, then she can make some bread.”</p>
@@ -408,7 +450,7 @@
           <!-- <img src="Yeast.gif" alt="yeast" align="left" width="100%"> -->
         </div>
 
-        <div class="beltitem" id="story20">
+        <div class="beltitemright" id="story20">
           <p>&emsp;That Wednesday was my first day supervising self-checkout. There are four self-checkout machines, and because they’re self-checkout, my job mostly consists of helping people who are struggling to ring things up, fixing problems with the machines, and cleaning the stations between each customer. It was an eventful first day: a receipt printer ran out of paper, one of the cash dispensers stopped working, and a busy day of shoppers eager to avoid being around others meant plenty of traffic through self-checkout. I didn’t really interact with too many people; mostly just cleaned screens and issued often unreciprocated greetings and goodbyes.</p>
           <p>&emsp;An unforeseen side effect of working self-checkout was the objectifying comments that I occasionally received. I couldn’t quite figure out why this was a phenomenon that seemingly only existed in self checkout, though I’d guess that it’s a byproduct of being out from behind the counter and having to bend over to scrub down scanners. It wasn’t atrocious; just little comments that made me feel uncomfortable.</p>
           <p>&emsp;One older man eyed me up and down and kept calling me “cutie.” </p>
@@ -423,7 +465,7 @@
           <img src="Wipe.gif" alt="wipe" align="left" width="100%">
         </div>
 
-        <div class="beltitem" id="story21">
+        <div class="beltitemleft" id="story21">
           <p>&emsp;Thursday, I was thrown all over the place. I supervised self-checkout, I helped run drive-up orders, but I was on register for a while.</p>
         </div>
 
@@ -431,7 +473,7 @@
           <img src="Wipe.gif" alt="wipe" align="left" width="100%">
         </div>
 
-        <div class="beltitem" id="story22">
+        <div class="beltitemright" id="story22">
           <p>&emsp;A woman with a high blonde ponytail and headphones in brought a scooter to my register. </p>
           <p>“Hi there!!!” Her voice was loud and enthusiastic. I figured that she was probably speaking loudly because of the headphones.</p>
           <p>“Hi there,” I replied.</p>
@@ -451,13 +493,101 @@
           <!-- <img src="Scooter.gif" alt="scooter" align="left" width="100%"> -->
         </div>
 
-        <div class="beltitem" id="story22">
+        <div class="beltitemleft" id="story22">
           <p>&emsp;A man started unloading his cart of groceries onto my conveyor belt. I immediately knew that I would be asking about the cat litter.</p>
           <p>“Do you have a cat?” I asked as I scanned the bag. </p>
           <p>“Well what else would I be buying this for?” he replied with a chuckle. His response threw me for a loop; nobody had ever challenged my rhetorical questions before.</p>
           <p>“Well, I guess that's a fair point.”</p>
           <p>“Actually, I was buying cat litter at another store, and the girl checking me out told me that if you have a dead body, you can hide it better with cat litter. But then, I suppose that this isn't enough to hide an entire body,” he said with a laugh. I wasn’t quite sure what response this warranted.</p>
           <p>“Well, let's hope that you never have to find out,” I joked.</p>
+        </div>
+
+        <div class="beltitemright" id="story23">
+          <p>Set design teacher FIX FIX FIX FIX</p>
+        </div>
+
+        <div class="beltitemleft" id="story24">
+          <p>Older folks reminded by granddaughter by my voice FIX FIX FIX FIX</p>
+        </div>
+
+        <div class="beltitemright" id="story25">
+          <p>Man with snap card surprised at extra funds FIX FIX FIX FIX</p>
+        </div>
+
+        <div class="beltitemleft" id="story26">
+          <p>Russian women, talked about Vladivostok and the trans-siberian railroad FIX FIX FIX FIX</p>
+        </div>
+
+        <div class="beltitemright" id="story27">
+          <p>Woman with the mask who argued with Marjorie FIX FIX FIX FIX</p>
+        </div>
+
+        <div class="beltitemleft" id="story28">
+          <p>Woman who had been to Basalt FIX FIX FIX FIX</p>
+        </div>
+
+        <div class="beltitemright" id="story29">
+          <p>man with fortnite masks; 5&7 year old sons, another due in four days FIX FIX FIX FIX</p>
+        </div>
+
+        <div class="beltitemleft" id="story30">
+          <p>woman whose daughter will have to be induced if she hasn't had her baby by Friday (two days from now) FIX FIX FIX FIX</p>
+        </div>
+
+        <div class="beltitemright" id="story31">
+          <p>pair who spoke Russian FIX FIX FIX FIX</p>
+        </div>
+
+        <div class="beltitemleft" id="story32">
+          <p>"you know, this all would have been different back in the day." {Nyt and old pics} "well the women back then all stayed at home. They knew how to communicate with their children. Now it's all "what am I going to do with my kids?" (Mock horror) FIX FIX FIX FIX</p>
+        </div>
+
+        <div class="beltitemright" id="story33">
+          <p>woman with bright pink jeans x2, "do you have kids at home?" "No, granddaughters." "Oh, how old are your granddaughters?" "5. Twins" "Have you seen them since this all happened?" "Well yeah, through the door." "Oh well that's nice. It's certainly uplifting to see how people have been able to connect even with everything that's going on." "Well I just don't see why I can't see them in person... I don't have it, and they don't have it, so why can't I see them? But then I just can't get that through my daughter's head." ... "It's all our idiot president's fault. Trump, he's just a complete asshole. You know, I was reading a report this morning that he sent a bunch of ventilators to China back in January? Billions of dollars, off to China! And now we all have to wear masks." "Oh, and he'll tell you that it's all a hoax. He's a dumbass." FIX FIX FIX FIX</p>
+        </div>
+
+        <div class="beltitemleft" id="story34">
+          <p>woman who hadn't told her kids that they're not going back to school (wearing scrubs) FIX FIX FIX FIX</p>
+        </div>
+
+        <div class="beltitemright" id="story35">
+          <p>shipt shopper fight at self checkout FIX FIX FIX FIX</p>
+        </div>
+
+        <div class="beltitemleft" id="story36">
+          <p>shipt shopper fight at self checkout FIX FIX FIX FIX</p>
+        </div>
+
+        <div class="beltitemright" id="story37">
+          <p>man in gas mask, scuba goggles FIX FIX FIX FIX</p>
+        </div>
+
+        <div class="beltitemleft" id="story38">
+          <p>Cancer 22 grandson FIX FIX FIX FIX</p>
+        </div>
+
+        <div class="beltitemright" id="story39">
+          <p>Cumberband FIX FIX FIX FIX</p>
+        </div>
+
+        <div class="beltitemleft" id="story40">
+          <p>Idiot FIX FIX FIX FIX</p>
+        </div>
+
+        <div class="beltitemright" id="story41">
+          <p>Converse FIX FIX FIX FIX</p>
+        </div>
+
+        <div class="beltitemleft" id="story42">
+          <p>Ma'am FIX FIX FIX FIX</p>
+        </div>
+
+        <div class="beltitemright" id="story42">
+          <p>Screaming middle schoolers FIX FIX FIX FIX</p>
+        </div>
+
+        <div class="beltitemleft" id="story43">
+          <p>Toys/board games for the kiddo at the hospital FIX FIX FIX FIX</p>
         </div>
 
       </div>
