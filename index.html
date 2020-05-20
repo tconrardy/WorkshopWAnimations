@@ -2,252 +2,206 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-    .flexbox {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-
-      .proj {
-        float: left;
-        width: 40%;
-      }
-
-      @media screen and (orientation:portrait) {
-        .proj {
-          width: 90%;
-        }
-      }
-
-      body {
-        margin:0;
-        font-family: Garamond, Times, serif;
-        background-color: #eee;
-      }
-
-      .navbar {
-        overflow: hidden;
-        background-color: #00319C;
-        /* The above shade of blue and the rest of the
-        style in this page is informed by Andover's
-        Brand & Communication Services' "Visual Identity"
-        guidelines. I'm happy to change the style,
-        but I figured that the Phillips Academy style guide
-        would be a good default for now.  */
-        position: fixed;
-        top: 0;
-        width: 100%;
-      }
-
-      .navbar a {
-        float: left;
-        display: block;
-        color: white;
-        padding: 15px;
-        text-decoration: none;
-        font-size: 17px;
-        float: right;
-      }
-
-      .navbar a:hover {
-        background: #2d73b3;
-      }
-
-
-      .navbar h1 {
-        color: white;
-        text-align: left;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin: 1%;
-      }
-
-      .main {
-        margin-top: 30px;
-      }
-
-      .intro {
-        margin-top: 2%;
-        /* background-color: #A6B7DC; */
-        padding: 1%;
-      }
-
-      .intro p {
-        color: #00319C;
-      }
-
-      .proj {
-        margin-top: 8px;
-        vertical-align: middle;
-        border-style: solid;
-        border-width: thin;
-        background-color: #eee;
-        border-color: #A6B7DC;
-        padding-left: 4%;
-        padding-right: 4%;
-        padding-bottom: 4%;
-        transition: 0.4s;
-        margin-top: 3%;
-      }
-
-      .proj:hover{
-        background-color: #A6B7DC;
-      }
-
-      .proj a {
-        color: #00319C;
-        text-decoration: none;
-      }
-
-      .proj h2 {
-        text-align: center;
-      }
-
-      .proj h4 {
-        text-align: center;
-      }
-
-      .proj img {
-        margin-top: 5%;
-      }
-
-      .titlebox {
-        background-image: url(ToolsFiller.jpg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        width:100%;
-        height:100%;
-      }
-
-      .titletext {
-        width: 100%;
-        padding-bottom: 25%;
-        padding-top: 20%;
-        text-align: center;
-        color: #00319C;
-        background-color: #bbbbbbaa;
-      }
-
-      .titletext img {
-        width: 1%;
-      }
-
-      .titletext h1 {
-        font-size: 5em;
-      }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
 
-    <div class="navbar">
-      <h1>The Workshop at Andover</h1>
-      <!-- <div> <a href="#menu">Menu</a> </div> -->
-    </div>
-
-    <!-- <img src="ToolsFiller.jpg" alt="tool" height="100%" width="100%"> -->
-    <div class="titlebox">
-      <div class="titletext">
-        <h1>Class, Community and Crisis</h1>
-        <h2>Viewpoints from Past and Present</h2>
-        <img src="arrow.gif" alt="down arrow">
+      <div class="navbar">
+        <h1>The Workshop at Andover</h1>
       </div>
-    </div>
-    <!-- WHY DOES THIS NOT WORK??? -->
+      <div class="titlebox">
+        <div class="titletext">
+          <h1>THE WORKSHOP 2020:</h1>
+          <h2><i>Class, Community, & Crisis</i></h2>
+          <br><br>
+          <img src="https://03a8fda.netsolhost.com/prod-tang/wp-content/uploads/2014/10/institute-logo-600-white-2x.png" alt="tang institute" style="width:400px;height:128px;">
+        </div>
+      </div>
+      <!-- WHY DOES THIS NOT WORK??? -->
 
-    <div class="flexbox">
-      <div class="proj" id="davis">
-        <h2><a href="Davis.html">North Carolina’s Divided Culture Shown Through the Lens of COVID-19</a></h2>
-        <h4><a href="Davis.html">By Davis Barrow</a></h4>
-        <a href="Davis.html">This is where a brief description of Davis's project would go, so that visitors to the site could decide whether they'd like to click in!</a>
+      <div class="cards">
+        <div class="card wide" id="sadie" href="Sadie.html">
+          <img class="center-cropped" src="https://i.postimg.cc/tTRyRN1F/IMG-0301.jpg" alt="sadie's image">
+          <div class="info">
+            <h2><a href="Sadie.html">“Who Needs a Mask?”:<br>How Social Connection Saves Lives</a></h2>
+            <a href="Sadie.html"><i> Sadie Cheston-Harris </i></a>
+          </div>
+          <div class="body">
+            <a href="Sadie.html">
+              <p>This is a super brief description of the project / a particularly compelling quote or smth. clickable!</p>
+            </a>
+          </div>
+        </div>
+        <div class="card wide" id="junah" href="Junah.html">
+          <img class = "center-cropped" src="https://i.postimg.cc/jSJNJW6v/IMG-8121.jpg" alt="junah's mom">
+          <div class="info">
+            <h2><a href="Junah.html">Homebound & Bound at Home</a></h2>
+            <a href="Junah.html"><i> Junah Jang</i></a>
+          </div>
+          <div class="body">
+            <a href="Tessa.html">
+              <p><center>on feeling Asian, masking my face, and returning to my mother.</center></p>
+            </a>
+          </div>
+        </div>
+        <div class="card" id="amy" href="Amy.html">
+          <div class="info">
+            <h2><a href="Amy.html"> <b>Untitled Amy Project </b></a></h2>
+            <a href="Amy.html"><b><i> Amy Chew </i></b></a>
+            <a href="Amy.html"><b>
+              <p>This is a super brief description of the project / a particularly compelling quote or smth. clickable!</p></b>
+            </a>
+          </div>
+        </div>
+        <div class="card" id="davis" href="Davis.html">
+          <div class="info">
+            <h2><a href="Davis.html"> North Carolina’s Divided Culture Shown Through the Lens of COVID-19 </a></h2>
+            <a href="Davis.html"><i> Davis Barrow </i></a>
+          </div>
+          <div class="body">
+            <a href="Davis.html">
+              <p>This is a super brief description of the project / a particularly compelling quote or smth. clickable!</p>
+            </a>
+          </div>
+        </div>
+        <div class="card" id="layo" href="Layo.html">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/12005/harbour1.jpg" alt="Bristol harbour" style=
+      "height:100px">
+          <div class="info">
+            <h2><a href="Layo.html"> The Effect of NYS Government Action on the Covid-19 Crisis</a></h2>
+            <a href="Layo.html"><i> Layomi Oloritun </i></a>
+          </div>
+          <div class="body">
+            <a href="Layo.html">
+              <p>brief description of project ! keep it short ; clickable!</p>
+            </a>
+          </div>
+        </div>
+        <div class="card" id="tylerwill" href="TylerWill.html">
+          <div class="info">
+            <h2><a href="TylerWill.html">Untitled TylerWill Project</a></h2>
+            <a href="TylerWill.html"><i> Tyler Yung and Will Yung</i></a>
+          </div>
+          <div class="body">
+            <a href="TylerWill.html">
+              <p>description here! two sentences or left</p>
+            </a>
+          </div>
+        </div>
+        <div class="card superwide" id="sophie" href="Sophie.html">
+          <div class="info">
+            <h2><a href="Sophie.html"><b>QuaranScenes</b></a></h2>
+            <a href="Sophie.html"><b><i> Sophie Liu </i></b></a>
+            <a href="Sophie.html"> <b>
+              <p> Documenting community dynamics, emotions, and media consumption during my family's two-week mandatory home quarantine. </p> </b>
+            </a>
+          </div>
+        </div>
+        <div class="card wide" id="claire" href="Claire.html">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/12005/harbour1.jpg" alt="Bristol harbour">
+          <div class="info">
+            <h2><a href="Claire.html"> Untitled Claire Project</a></h2>
+            <a href="Claire.html"><i> Claire Brady </i></a>
+          </div>
+          <div class="body">
+            <a href="Claire.html">
+              <p>This is a super brief description of the project / a particularly compelling quote or smth. clickable!</p>
+            </a>
+          </div>
+        </div>
+        <div class="card wide" id="skylar" href="Skylar.html">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/12005/harbour1.jpg" alt="Bristol harbour">
+          <div class="info">
+            <h2><a href="Skylar.html"> Journeys through the Covid-19 Crisis</a></h2>
+            <a href="Skylar.html"><i> Skylar Xu </i></a>
+          </div>
+          <div class="body">
+            <a href="Skylar.html">
+              <p>This is a super brief description of the project / a particularly compelling quote or smth. clickable!</p>
+            </a>
+          </div>
+        </div>
+        <div class="card superwide" id="liu" href="Liu.html">
+          <div class="info">
+            <h2><a href="Liu.html"> <b>Untitled Liu Project</b></a></h2>
+            <a href="Liu.html"><i><b> Liu Rothschild </b></i></a>
+            <a href="Liu.html"><b>
+              <p>This is a super brief description of the project / a particularly compelling quote or smth. clickable!</p></b>
+            </a>
+          </div>
+        </div>
+        <div class="card" id="tessa" href="Tessa.html">
+          <img class = "center-cropped" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/12005/harbour1.jpg" alt="Bristol harbour">
+          <div class="info">
+            <h2><a href="Tessa.html"> The Tales of a Pandemictime Cashier</a></h2>
+            <a href="Tessa.html"><i> Tessa Conrardy </i></a>
+          </div>
+          <div class="body">
+            <a href="Tessa.html">
+              <p>Stories of Pittsburghers during the COVID-19 Pandemic</p>
+            </a>
+          </div>
+        </div>
+        <div class="card" id="yeetang" href="Yeetang.html">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/12005/harbour1.jpg" alt="Bristol harbour">
+          <div class="info">
+            <h2><a href="Yeetang.html">Covid-19: Community of Maps, Data, and the People Behind Them</a></h2>
+            <a href="Yeetang.html"><i> Yeetang Kwok </i></a>
+          </div>
+          <div class="body">
+            <a href="Yeetang.html">
+              <p>This is a super brief description of the project / a particularly compelling quote or smth. clickable!</p>
+            </a>
+          </div>
+        </div>
+        <div class="card" id="isabel" href="Isabel.html">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/12005/harbour1.jpg" alt="Bristol harbour">
+          <div class="info">
+            <h2><a href="Isabel.html"> Accessibility in Remote Learning</a></h2>
+            <a href="Isabel.html"><i> Isabel Mikheev </i></a>
+          </div>
+          <div class="body">
+            <a href="Isabel.html">
+              <p>How a pandemic exposes educational inequities, and the teams that encourage the perseverance we all need.</p>
+            </a>
+          </div>
+        </div>
+        <div class="card" id="emmeline" href="Emmeline.html">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/12005/harbour1.jpg" alt="Bristol harbour">
+          <div class="info">
+            <h2><a href="Emmeline.html">Coronavirus and AIDS:<br> Similar Stories in Different Times</a></h2>
+            <a href="Emmeline.html"><i> Emmeline Song </i></a>
+          </div>
+          <div class="body">
+            <a href="Emmeline.html">
+              <p>This is a super brief description of the project / a particularly compelling quote or smth. clickable!</p>
+            </a>
+          </div>
+        </div>
+        <div class="card wide" id="emerald" href="Emerald.html">
+          <div class="info">
+            <h2><a href="Emerald.html"> <b>Untitled Emerald Project</b></a></h2>
+            <a href="Emerald.html"><i> <b>Emerald Tan</b> </i></a>
+            <a href="Emerald.html"><b>
+              <p>This is a super brief description of the project / a particularly compelling quote or smth. clickable!</p></b>
+            </a>
+          </div>
+        </div>
+        <div class="card wide" id="ogden" href="Ogden.html">
+          <img class="center-cropped" src="https://i.postimg.cc/8kJWTRL2/IMG-4116.jpg" alt="ogden's painting">
+          <div class="info">
+            <h2><a href="Ogden.html">Converging Views</a></h2>
+            <a href="Ogden.html"><i> Ogden Nutting </i></a>
+          </div>
+          <div class="body">
+            <a href="Ogden.html">
+              <p>This is a super brief description of the project / a particularly compelling quote or smth. clickable!</p>
+            </a>
+          </div>
+        </div>
+        <br><br><br>
       </div>
 
-      <div class="proj" id="claire">
-        <h2><a href="Claire.html">Untitled Claire Project</a></h2>
-        <h4><a href="Claire.html">By Claire Brady</a></h4>
-        <a href="Claire.html">I want to focus on how the network of local farms, restaurants, markets, and groceries create a sense of community in Portland, Maine. Primarily through interviews, I want to look at why these organizations or small businesses do what they do specifically in Portland, and how they may contribute to the values or defining factors of the broader city community.
-          Given the closure or takeout limitations of many restaurants, bakeries, cafes, etc due to COVID-19, both food retail and suppliers for those places are being drastically affected. Are those measures changing the identity of restaurants/cafes or even neighborhoods?</a>
-      </div>
-
-      <div class="proj" id="sadie">
-        <h2><a href="Sadie.html">“Who Needs a Mask?”:How Social Connection Saves Lives</a></h2>
-        <h4><a href="Sadie.html">By Sadie Cheston-Harris</a></h4>
-        <a href="Sadie.html">I’m interested in looking at the ways institutions are trying to replicate in-person learning with online learning (how classroom communities have now changed), and looking at the psychological and biological effects of learning and interacting in person versus through a screen. I specifically want to look at information retention rates, level of interest/engagement, and level of connection and empathy felt towards the teacher and fellow classmates both in person and online. I don’t know what my artifact would be for this though yet - maybe a flowchart of how the body processes information during each version of learning (as well as the long term effects).</a>
-      </div>
-
-      <div class="proj" id="amy">
-        <h2><a href="Amy.html">Untitled Amy Project</a></h2>
-        <h4><a href="Amy.html">By Amy Chew</a></h4>
-        <a href="Amy.html">Interview a random sample of 20 PA students (enrolled in a spring term English class and at least one term before) and (hopefully) all of the PA English teachers and ask them a series of questions about (questions will be asked in the context of online and on-campus learning): How they are conducting their English courses, and more specifically their discussions (FlipGrid, Canvas, etc.)
-        How long the class meets for
-        Student participation? Teacher facilitation?
-        How likely and how often are students to speak during class
-        Etc. </a>
-        <!-- <img src="bulfinch.jpg" alt="bulfinch.jpg" width=100%> -->
-      </div>
-
-      <div class="proj" id="junah" href="Junah.html">
-        <h2><a href="Junah.html">Homebound & Bound at Home: on feeling Asian, masking my face, and returning to my mother</a></h2>
-        <h4><a href="Junah.html">By Junah Jang</a></h4>
-        <a href="Junah.html"> I’m super interested in possibly exploring the similarities/differences within the ways that black people / Asian americans are perceived under the lens of being diseased. (i.e. black people being labeled or perceived as uniquely immune, not in need of medicine, etc. ; asian americans being perceived as uniquely susceptible to disease ; what do those discrepancies reveal? how are they manifesting in treatment / diagnosis / hate crimes across the country?). I would probably approach this from a kind of critical theory standpoint (there’s a real lack of critical theory here but that’s part of the fun i guess!). But I’m worried about whether or not this fits within the constraint of writing about my immediate “community.” The truth is that I’m not particularly familiar with my hometown (or any of my hometowns, really), so I’m trying to find new ways in which to define “community” that might be more interesting for me personally!</a>
-      </div>
-
-      <div class="proj" id="isabel" href="Isabel.html">
-        <h2><a href="Isabel.html">Accessibility in Remote Learning: How a pandemic exposes educational inequities, and the teams that encourage the perseverance we all need.</a></h2>
-        <h4><a href="Isabel.html">By Isabel Mikeev</a></h4>
-        <a href="Isabel.html"> I’m super interested in possibly exploring the similarities/differences within the ways that black people / Asian americans are perceived under the lens of being diseased. (i.e. black people being labeled or perceived as uniquely immune, not in need of medicine, etc. ; asian americans being perceived as uniquely susceptible to disease ; what do those discrepancies reveal? how are they manifesting in treatment / diagnosis / hate crimes across the country?). I would probably approach this from a kind of critical theory standpoint (there’s a real lack of critical theory here but that’s part of the fun i guess!). But I’m worried about whether or not this fits within the constraint of writing about my immediate “community.” The truth is that I’m not particularly familiar with my hometown (or any of my hometowns, really), so I’m trying to find new ways in which to define “community” that might be more interesting for me personally!</a>
-      </div>
-
-      <div class="proj" id="emmeline" href="Emmeline.html">
-        <h2><a href="Emmeline.html">Coronavirus and AIDS: Similar Stories in Different Times</a></h2>
-        <h4><a href="Emmeline.html">By Emmeline Song</a></h4>
-        <a href="Emmeline.html"> I’m super interested in possibly exploring the similarities/differences within the ways that black people / Asian americans are perceived under the lens of being diseased. (i.e. black people being labeled or perceived as uniquely immune, not in need of medicine, etc. ; asian americans being perceived as uniquely susceptible to disease ; what do those discrepancies reveal? how are they manifesting in treatment / diagnosis / hate crimes across the country?). I would probably approach this from a kind of critical theory standpoint (there’s a real lack of critical theory here but that’s part of the fun i guess!). But I’m worried about whether or not this fits within the constraint of writing about my immediate “community.” The truth is that I’m not particularly familiar with my hometown (or any of my hometowns, really), so I’m trying to find new ways in which to define “community” that might be more interesting for me personally!</a>
-      </div>
-
-      <div class="proj" id="layo" href="Layo.html">
-        <h2><a href="Layo.html">The Effect of NYS Government Action on the COVID-19 Crisis</a></h2>
-        <h4><a href="Layo.html">By Layomi Oloritun</a></h4>
-        <a href="Layo.html"> I’m super interested in possibly exploring the similarities/differences within the ways that black people / Asian americans are perceived under the lens of being diseased. (i.e. black people being labeled or perceived as uniquely immune, not in need of medicine, etc. ; asian americans being perceived as uniquely susceptible to disease ; what do those discrepancies reveal? how are they manifesting in treatment / diagnosis / hate crimes across the country?). I would probably approach this from a kind of critical theory standpoint (there’s a real lack of critical theory here but that’s part of the fun i guess!). But I’m worried about whether or not this fits within the constraint of writing about my immediate “community.” The truth is that I’m not particularly familiar with my hometown (or any of my hometowns, really), so I’m trying to find new ways in which to define “community” that might be more interesting for me personally!</a>
-      </div>
-
-      <div class="proj" id="yeetang" href="Yeetang.html">
-        <h2><a href="Yeetang.html">COVID-19: Community of Maps, Data, and the People Behind Them</a></h2>
-        <h4><a href="Yeetang.html">By Yeetang Kwok</a></h4>
-        <a href="Yeetang.html"> I’m super interested in possibly exploring the similarities/differences within the ways that black people / Asian americans are perceived under the lens of being diseased. (i.e. black people being labeled or perceived as uniquely immune, not in need of medicine, etc. ; asian americans being perceived as uniquely susceptible to disease ; what do those discrepancies reveal? how are they manifesting in treatment / diagnosis / hate crimes across the country?). I would probably approach this from a kind of critical theory standpoint (there’s a real lack of critical theory here but that’s part of the fun i guess!). But I’m worried about whether or not this fits within the constraint of writing about my immediate “community.” The truth is that I’m not particularly familiar with my hometown (or any of my hometowns, really), so I’m trying to find new ways in which to define “community” that might be more interesting for me personally!</a>
-      </div>
-
-      <div class="proj" id="tylerwill" href="TylerWill.html">
-        <h2><a href="TylerWill.html">Untitled TylerWill Project</a></h2>
-        <h4><a href="TylerWill.html">By Tyler Yung and Will Yung</a></h4>
-        <a href="TylerWill.html"> I’m super interested in possibly exploring the similarities/differences within the ways that black people / Asian americans are perceived under the lens of being diseased. (i.e. black people being labeled or perceived as uniquely immune, not in need of medicine, etc. ; asian americans being perceived as uniquely susceptible to disease ; what do those discrepancies reveal? how are they manifesting in treatment / diagnosis / hate crimes across the country?). I would probably approach this from a kind of critical theory standpoint (there’s a real lack of critical theory here but that’s part of the fun i guess!). But I’m worried about whether or not this fits within the constraint of writing about my immediate “community.” The truth is that I’m not particularly familiar with my hometown (or any of my hometowns, really), so I’m trying to find new ways in which to define “community” that might be more interesting for me personally!</a>
-      </div>
-
-      <div class="proj" id="skylar" href="Skylar.html">
-        <h2><a href="Skylar.html">Journeys Through the COVID-19 Crisis</a></h2>
-        <h4><a href="Skylar.html">By Skylar Xu</a></h4>
-        <a href="Skylar.html"> I’m super interested in possibly exploring the similarities/differences within the ways that black people / Asian americans are perceived under the lens of being diseased. (i.e. black people being labeled or perceived as uniquely immune, not in need of medicine, etc. ; asian americans being perceived as uniquely susceptible to disease ; what do those discrepancies reveal? how are they manifesting in treatment / diagnosis / hate crimes across the country?). I would probably approach this from a kind of critical theory standpoint (there’s a real lack of critical theory here but that’s part of the fun i guess!). But I’m worried about whether or not this fits within the constraint of writing about my immediate “community.” The truth is that I’m not particularly familiar with my hometown (or any of my hometowns, really), so I’m trying to find new ways in which to define “community” that might be more interesting for me personally!</a>
-      </div>
-
-      <div class="proj" id="liu" href="Liu.html">
-        <h2><a href="Liu.html">Untitled Liu Project</a></h2>
-        <h4><a href="Liu.html">By Liu Rothschild</a></h4>
-        <a href="Liu.html"> I’m super interested in possibly exploring the similarities/differences within the ways that black people / Asian americans are perceived under the lens of being diseased. (i.e. black people being labeled or perceived as uniquely immune, not in need of medicine, etc. ; asian americans being perceived as uniquely susceptible to disease ; what do those discrepancies reveal? how are they manifesting in treatment / diagnosis / hate crimes across the country?). I would probably approach this from a kind of critical theory standpoint (there’s a real lack of critical theory here but that’s part of the fun i guess!). But I’m worried about whether or not this fits within the constraint of writing about my immediate “community.” The truth is that I’m not particularly familiar with my hometown (or any of my hometowns, really), so I’m trying to find new ways in which to define “community” that might be more interesting for me personally!</a>
-      </div>
-
-      <div class="proj" id="ogden" href="Ogden.html">
-        <h2><a href="Ogden.html">Converging Views</a></h2>
-        <h4><a href="Ogden.html">By Ogden Nutting</a></h4>
-        <a href="Ogden.html"> I’m super interested in possibly exploring the similarities/differences within the ways that black people / Asian americans are perceived under the lens of being diseased. (i.e. black people being labeled or perceived as uniquely immune, not in need of medicine, etc. ; asian americans being perceived as uniquely susceptible to disease ; what do those discrepancies reveal? how are they manifesting in treatment / diagnosis / hate crimes across the country?). I would probably approach this from a kind of critical theory standpoint (there’s a real lack of critical theory here but that’s part of the fun i guess!). But I’m worried about whether or not this fits within the constraint of writing about my immediate “community.” The truth is that I’m not particularly familiar with my hometown (or any of my hometowns, really), so I’m trying to find new ways in which to define “community” that might be more interesting for me personally!</a>
-      </div>
-
-      <div class="proj" id="tessa" href="Tessa.html">
-        <h2><a href="Tessa.html">The Tales of a Pandemictime Cashier: Stories of Pittsburghers during the COVID-19 Pandemic</a></h2>
-        <h4><a href="Tessa.html">By Tessa Conrardy</a></h4>
-        <a href="Tessa.html"> I’m super interested in possibly exploring the similarities/differences within the ways that black people / Asian americans are perceived under the lens of being diseased. (i.e. black people being labeled or perceived as uniquely immune, not in need of medicine, etc. ; asian americans being perceived as uniquely susceptible to disease ; what do those discrepancies reveal? how are they manifesting in treatment / diagnosis / hate crimes across the country?). I would probably approach this from a kind of critical theory standpoint (there’s a real lack of critical theory here but that’s part of the fun i guess!). But I’m worried about whether or not this fits within the constraint of writing about my immediate “community.” The truth is that I’m not particularly familiar with my hometown (or any of my hometowns, really), so I’m trying to find new ways in which to define “community” that might be more interesting for me personally!</a>
-      </div>
-    </div>
-
-  </body>
+    </body>
 </html>
