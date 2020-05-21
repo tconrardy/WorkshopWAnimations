@@ -23,12 +23,14 @@
   padding-left: 10px;
   padding-right: 10px;
   margin: 1%;
+  font-family: 'Fira Sans';
 }
 
 .titlebox {
-  background-image: url(https://images.pexels.com/photos/209728/pexels-photo-209728.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://miro.medium.com/max/12000/1*LY1KiOzdn-NA3tLTbIJ4RQ.jpeg);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center;
   background-size: cover;
   width: 100%;
   height: 50%;
@@ -44,17 +46,19 @@
   width: 1%;
 }
 .titletext h1 {
+  font-family: 'Raleway';
   font-size: 480%;
 }
 .titletext h2 {
+  font-family: 'Fira Sans';
   font-size:300%;
 }
 
+/*text color*/
 .card a {
   color: #292929;
   text-decoration: none;
 }
-
 .card b{
   color: #eee;
 }
@@ -75,7 +79,6 @@
 .superwide {
   grid-column: auto / span 8;
 }
-
 
 
 html {
@@ -102,13 +105,32 @@ img {max-width: 100%;}
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
 }
 .card:hover {
-  background-color: #d0d9bf;
+  background-color: #d0c6ad;
 }
-.card .info {
+
+.quote {
+  grid-column: auto / span 4;
+  grid-row: auto / span 2 !important;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #ded4ba;
   padding-left: 2em;
   padding-right: 2em;
-  font-family: 'Raleway', sans-serif;
+  line-height: 1.7em;
+}
+.quote:hover {
+  border-style: double;
+  border-color: #d0d9bf;
+}
+
+.info {
+  padding-left: 2em;
+  padding-right: 2em;
   text-align: center;
+  font-family: 'Raleway';
+}
+.info h2 {
+  font-family: 'Fira Sans';
 }
 .card .body {
   padding-left: 2em;
@@ -123,20 +145,24 @@ img {max-width: 100%;}
   width: 100%;
 }
 
-#amy, #emerald {
+#amy {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.postimg.cc/dtH4dxHk/proj1-2.jpg");
   background-size: cover;
   background-position: center;
   border-style: double;
 }
-
+#emerald {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.postimg.cc/dtH4dxHk/proj1-2.jpg");
+  background-size: cover;
+  background-position: center;
+  border-style: double;
+}
 #sophie {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.postimg.cc/SsK66H2R/EPSON001.jpg");
   background-size: scale-down;
   background-position: center;
   border-style: double;
 }
-
 #liu {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.postimg.cc/Dy6fCm5W/Full-Piece.jpg");
   background-size: scale-down;
@@ -144,11 +170,8 @@ img {max-width: 100%;}
   border-style: double;
 }
 
-#davis, #amy, #sophie, #tylerwill, #emerald, #liu {
-  padding: 10% 0;
+#davis, #amy, #sophie, #emerald, #liu, #layo {
+  padding: 13% 0;
 }
-
-
-
 
 
