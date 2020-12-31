@@ -56,11 +56,11 @@
 
 /*text color*/
 .card a {
-  color: #292929;
+  color: #DDEDF4;
   text-decoration: none;
 }
 .card b{
-  color: #eee;
+  color: #DDEDF4;
 }
 
 .cards {
@@ -101,11 +101,11 @@ img {max-width: 100%;}
   max-width: 90%
 }
 .card {
-  background-color: #e9e2d1;
+  background-color: #212221;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
 }
 .card:hover {
-  background-color: #d0c6ad;
+  background-color: #20326c;
 }
 
 .quote {
@@ -113,14 +113,17 @@ img {max-width: 100%;}
   grid-row: auto / span 2 !important;
   border-style: solid;
   border-width: 5px;
-  border-color: #ded4ba;
-  padding-left: 2em;
-  padding-right: 2em;
+  border-color: #004c8c;
+  padding-left: 1.5em;
+  padding-right: 1.3em;
   line-height: 1.7em;
+  font-family: 'Raleway';
+  font-size: 130%;
+  color: #20326c;
 }
 .quote:hover {
   border-style: double;
-  border-color: #d0d9bf;
+  border-color: #20326c;
 }
 
 .info {
@@ -173,5 +176,8 @@ img {max-width: 100%;}
 #davis, #amy, #sophie, #emerald, #liu, #layo {
   padding: 13% 0;
 }
+
+
+
 
 
