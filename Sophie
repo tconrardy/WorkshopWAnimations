@@ -50,3 +50,45 @@
 #carousel .slide {
     display: inline-block;
 }
+</style>
+  </head>
+  <body>
+  <div class="overview">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+  <h1>QuaranScenes</h1>
+  <h3>Sophie Liu</h3>
+</div> 
+
+</div>
+
+<div id="carousel">
+    <div class="slide">
+        <img src="https://i.postimg.cc/RVNsyPgf/3-phase-one.png" style="width:90%"/>
+    </div>
+    <div class="slide">
+        <img src="https://i.postimg.cc/RVNsyPgf/3-phase-one.png" style="width:90%"/>
+    </div>
+    <div class="slide">
+        <img src="https://i.postimg.cc/RVNsyPgf/3-phase-one.png" style="width:90%"/>
+    </div>
+    <div class="slide">
+        <img src="https://i.postimg.cc/RVNsyPgf/3-phase-one.png" style="width:90%"/>
+    </div>
+    <div class="slide">
+        <img src="https://i.postimg.cc/RVNsyPgf/3-phase-one.png" style="width:90%"/>
+    </div>
+    <div class="slide">
+        <img src="https://i.postimg.cc/RVNsyPgf/3-phase-one.png" style="width:90%"/>
+    </div>
+    <div class="slide">
+        <img src="https://i.postimg.cc/RVNsyPgf/3-phase-one.png" style="width:90%"/>
+    </div>
+    <div class="slide">
+        <img src="https://i.postimg.cc/65v8zm7T/8-reflections-and-wonderings.png" style="width:90%"/>
+    </div>
+</div>
+
+<br><br><br><br>
+  </body>
+
+</html>
