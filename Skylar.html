@@ -2,6 +2,34 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+      var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+    </script>
     <style>
           body {
             margin: 0 auto;
@@ -185,8 +213,8 @@
               <h2 style="text-align:justify"> Ralph Lam ’22 </h2>
             <p style="text-align:justify"><i> “The Andover Bubble that a lot of students like to talk about… that phenomenon really kicked in for me.”</i></p>
                 <audio controls>
-                  <source src="horse.ogg" type="audio/ogg">
-                 <source src="horse.mp3" type="audio/mpeg">
+                  <source src="Ralph.m4a" type="audio/ogg">
+                 <source src="Ralph.m4a" type="audio/mpeg">
           Your browser does not support the audio element.
                 </audio>
                 <br><br>
@@ -203,8 +231,7 @@
               <h2 style="text-align:justify"> Laura Lee ’20 </h2>
             <p style="text-align:justify"><i> “The moment the whole coronavirus incident turned into something that could have been a personal matter, I sort of started panicking...that’s when I realized coronavirus is a real threat.”</i></p>
                 <audio controls>
-                  <source src="horse.ogg" type="audio/ogg">
-                 <source src="horse.mp3" type="audio/mpeg">
+                  <source src="Laura.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
                 </audio>
                 <br><br>
